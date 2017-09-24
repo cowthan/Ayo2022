@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="lib_color_font7">#FFFFFF</color>
+    <color name="lib_color_font7_trans60">#99FFFFFF</color>
+    <color name="lib_color_bg1">#F7F7F7</color>
+    <color name="lib_color_bg2">#ECECEC</color>
+    <color name="lib_transparent">#00000000</color>
+    <color name="lib_color_bg1_trans40">#66F7F7F7</color>
+    <color name="lib_color_title_immersive">@color/lib_color_bg1</color>
+    <color name="lib_color_font2">#333333</color>
+    <color name="lib_color_font4">#888888</color>
+    <color name="lib_color_font5">#999999</color>
+    <color name="lib_color_black_transform50">#80000000</color>
+</resources>

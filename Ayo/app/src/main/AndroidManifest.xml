@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.ayo.sample">
+
+    <!-- 相机相关权限 -->
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <!-- sd卡读写 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 连网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- 杂项 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <!-- 敏感权限 -->
+    <!-- 开机监听 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+
+
+    <application
+        android:name="org.ayo.ui.sample.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="org.ayo.ui.sample.SplashActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="standard"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.ayo.ui.sample.MainnActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="standard"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name="org.ayo.component.tmpl.TmplStarndardActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="standard"
+            android:theme="@style/AppTheme.Transparent" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ayo" android:host="page" android:path="/standard" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.ayo.component.tmpl.TmplSingleTopActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.Transparent"  >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ayo" android:host="page" android:path="/singletop" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.ayo.component.tmpl.TmplSingleTaskActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Transparent"  >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ayo" android:host="page" android:path="/singletask" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.ayo.component.tmpl.TmplSingleInstanceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.Transparent"  >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ayo" android:host="page" android:path="/singleinstance" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="org.ayo.ui.sample.flow.MyActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="standard"
+            android:theme="@style/AppTheme.Transparent"
+            />
+        <activity
+            android:name="org.ayo.ui.sample.flow.FlowLayoutActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="standard"
+            android:theme="@style/AppTheme.Transparent"
+            />
+        <activity
+            android:name="org.ayo.ui.sample.flow.FlowLayoutManagerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="standard"
+            android:theme="@style/AppTheme.Transparent"
+            />
+
+
+
+        <activity android:name="org.ayo.ui.sample.wheel.WheelPickerctivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="org.ayo.ui.sample.dialog.ui.SimpleHomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="org.ayo.ui.sample.material.DemoCoordinator_1_Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name="org.ayo.ui.sample.material.DemoCoordinator_2_Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="org.ayo.ui.sample.material.DemoCoordinator_3_Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="org.ayo.ui.sample.material.DemoCoordinator_4_Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name="org.ayo.ui.sample.material.DemoCoordinator_5_Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="org.ayo.ui.sample.material.DemoCoordinator_6_Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="org.ayo.ui.sample.material.DemoCoordinator_7_Activity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="org.ayo.ui.sample.material.DemoTabLayoutActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="org.ayo.ui.sample.material.DemoToolbarActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="org.ayo.ui.sample.http.DemoHttpActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="org.ayo.ui.sample.db.DemoDbActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="org.ayo.ui.sample.social.DemoSocialShareActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="org.ayo.ui.sample.log.DemoLogReporterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="org.ayo.ui.sample.notify.DemoPopupWindowActivity" />
+        <activity android:name="org.ayo.ui.sample.notify.DemoSweetAlertActivity" />
+        <activity android:name="org.ayo.ui.sample.template.recycler.DemoRecyclerViewActivity" />
+        <activity android:name="org.ayo.ui.sample.textview.badge.BadgeViewActivity" />
+        <activity android:name="org.ayo.ui.sample.textview.html.DemoAyoHtmlActivity" />
+        <activity android:name="org.ayo.ui.sample.textview.html.DemoOldHtmlActivity" />
+        <activity android:name="org.ayo.ui.sample.textview.span.AwesomeTextViewActivity" />
+        <activity android:name="org.ayo.ui.sample.verticalbanner.VerticalBannerActivity" />
+
+        <activity
+            android:name="org.ayo.ui.sample.master.CustomTmplActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="standard"
+            android:theme="@style/AppTheme.Transparent"  >
+                <intent-filter>
+                    <category android:name="android.intent.category.DEFAULT"/>
+                    <action android:name="android.intent.action.VIEW"/>
+                    <category android:name="android.intent.category.BROWSABLE"/>
+                    <data android:scheme="ayo" android:host="page" android:path="/custom1" />
+                </intent-filter>
+        </activity>
+
+        <service android:name="io.mattcarroll.hover.hoverdemo.DemoHoverMenuService" />
+
+
+
+        <activity
+            android:name="com.ayo.sdk.demo.DemoJobActivity"
+            android:label="job"
+            android:theme="@style/AppThemeActionBar"
+            >
+        </activity>
+
+        <activity
+            android:name="com.ayo.sdk.demo.SyncHistoryActivity"
+            android:label="job"
+            android:theme="@style/AppThemeActionBar"/>
+
+        <receiver
+            android:name="com.ayo.sdk.demo.DemoJobCreator$AddReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.evernote.android.job.ADD_JOB_CREATOR"/>
+            </intent-filter>
+        </receiver>
+
+
+        <activity
+            android:name="org.ayo.ui.sample.recycler.pinnedsection.PinnedMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="org.ayo.ui.sample.recycler.pinnedsection.PinnedSecondActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="org.ayo.ui.sample.recycler.pinnedsection.PinnedStockActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="org.ayo.ui.sample.statusbar.DemoStatusBarActivity"
+            android:theme="@style/AppTheme"
+            >
+        </activity>
+        <activity
+            android:name="org.ayo.ui.sample.picker.DemoPickerActivity"
+            android:theme="@style/AppTheme"
+            >
+        </activity>
+
+        <activity
+            android:name="org.ayo.ui.sample.video.MyVideoActivity"
+            android:alwaysRetainTaskState="false"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+    </application>
+
+</manifest>

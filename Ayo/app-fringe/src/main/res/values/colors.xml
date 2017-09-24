@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#CD0000</color>
+    <color name="colorPrimaryDark">#8B0000</color>
+    <color name="colorAccent">#CD0000</color>
+    <color name="colorControlHighlight">#e60000</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="navigationBarColor">#CD0000</color>
+
+    <color name="green">#a3c639</color>
+    <color name="dark_green">#85a71d</color>
+    <color name="yellow">#ff0</color>
+    <color name="gray">#ccc</color>
+    <color name="pink">#e91e63</color>
+
+    <color name="white">#ffffff</color>
+    <color name="lucensy">#00000001</color>
+    <color name="translucency">#e0000000</color>
+    <color name="orange">#ffa500</color>
+    <color name="blue">#0066dd</color>
+    <color name="black">#000000</color>
+    <!-- <color name="red">#bf242a</color> -->
+    <color name="transparent">#00000000</color>
+    <color name="light_orange">#fcb75c</color>
+    <color name="alpha_00">#00000000</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="trans">#50000000</color>
+    <color name="red">#fe0202</color>
+    <color name="background">#e5e5e5</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="Grey">#BEBEBE</color>
+
+
+    <color name="main_color">#CD0000</color>
+    <color name="bg_item_main_pressed">#e4e4e4</color>
+    <color name="bg_item_main">#f8f8f8</color>
+    <color name="gray_right_declare">#929292</color>
+    <color name="dislike_bg_normal_night">#ff666666</color>
+    <color name="dislike_bg_normal">#ff3e3e3e</color>
+    <color name="dislike_bg_pressed">#ff2b2b2b</color>
+    <!-- spring indicator -->
+    <color name="si_default_text_color">#FF0000</color>
+    <color name="si_default_text_color_selected">#FF00FF</color>
+    <color name="si_default_indicator_bg">#ee9999</color>
+
+    <color name="indicator_1">#55B3C2</color>
+    <color name="indicator_2">#64A4A4</color>
+    <color name="indicator_3">#66D7B9</color>
+    <color name="indicator_4">#FDBC7D</color>
+    <color name="indicator_unselected">#FF5C7A71</color>
+
+    <!-- for fab -->
+    <color name="material_blue_500">#5677fc</color>
+
+    <color name="black1">#7A7E83</color>
+    <color name="black2">#ffeeeeee</color>
+
+</resources>

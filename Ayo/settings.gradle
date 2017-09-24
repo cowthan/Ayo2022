@@ -1,0 +1,2 @@
+include ':app', ':ayo-ui-list', ':ayo-ui-view', ':ayo-ui-notify', ':ayo-ui-template', ':ayo-ui-view-extra', ':tpl-account', ':app-fringe', ':vedio-player-manager', ':hover', ':third-party-sdk', ':hover-wrapper', ':app-talker', ':Java2017', ':ayocore'
+

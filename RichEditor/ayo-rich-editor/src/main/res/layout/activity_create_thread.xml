@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/rich_white">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="发表"
+        android:id="@+id/titlebar_layout"
+        />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/titlebar_layout"
+        android:fillViewport="true"
+        android:scrollbarSize="4dip"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/message_title"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="19sp"
+                android:layout_marginTop="10dp"
+                android:gravity="left|top"
+                android:hint="@string/thread_title"
+                android:textColor="#575757"
+                android:maxLength="36"
+                android:minLines="1"
+                android:singleLine="true"
+                android:textColorHint="#999999"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_background"/>
+
+            <!-- 富文本编辑器 -->
+            <org.ayo.editor.editor.RichTextEditorView
+                android:id="@+id/view_rich_editor"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="30dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <org.ayo.editor.controller.EnterControlView
+        android:id="@+id/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/share_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"/>
+</RelativeLayout>

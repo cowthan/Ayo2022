@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed">
+
+    <include
+        android:id="@+id/titlebar_layout"
+        layout="@layout/picker_view_titlebar" />
+
+    <GridView
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlebar_layout"
+        android:horizontalSpacing="2dp"
+        android:listSelector="@null"
+        android:numColumns="4"
+        android:verticalSpacing="2dp" />
+
+
+</RelativeLayout>

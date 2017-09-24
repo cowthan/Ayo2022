@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.ayo.video.view.MediaController xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/media_controller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_player_top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/returnBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:paddingTop="2dp"
+                android:scaleType="center"
+                android:src="@drawable/return_btn_style"/>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/Style_TextViewMediaTitle_View"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:id="@+id/close"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@drawable/close_video"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:visibility="gone"
+            android:background="#000000" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/mediacontroller_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:background="#00000000"
+        android:src="@drawable/mediacontroller_unlock"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/process_mid_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_player_bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+
+            <RelativeLayout
+                android:id="@+id/play_lay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/playing_pause"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/process_time"
+                style="@style/Style_TextViewMediaTime_View"
+                android:text="00:00" />
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                style="@style/SeekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:splitTrack="false"/>
+
+
+            <TextView
+                android:id="@+id/totle_time"
+                style="@style/Style_TextViewMediaTime_View"
+                android:layout_marginRight="7dp"
+                android:layout_toRightOf="@id/process_time"
+                android:text="00:00" />
+
+
+            <RelativeLayout
+                android:id="@+id/fullscreen_lay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/fullscreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/video_full"
+                    android:scaleType="fitXY" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/control_layout"
+        android:layout_below="@id/title_layout"
+        android:background="#88000000"
+        android:visibility="gone">
+
+        <org.ayo.video.view.ProgressImageView
+            android:id="@+id/view_list_empty_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/loading_light"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</org.ayo.video.view.MediaController>

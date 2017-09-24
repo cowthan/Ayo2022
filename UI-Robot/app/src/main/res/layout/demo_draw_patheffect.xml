@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/layout_intro" />
+        <com.ayo.robot.config.FormCheckBox
+            android:id="@+id/form_check_path_effect"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="70dp"/>
+        <com.ayo.robot.config.FormRadioGroup
+            android:id="@+id/form_radio_path_effect_group"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="70dp"/>
+        <org.ayo.robot.canvas.path.PathEffectView
+            android:id="@+id/shapeView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:background="#99cc99"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:id="@+id/tv_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:layout_gravity="center_horizontal|bottom"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

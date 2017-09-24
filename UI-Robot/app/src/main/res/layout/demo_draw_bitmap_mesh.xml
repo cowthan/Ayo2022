@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="切换效果"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+
+    <org.ayo.robot.canvas.shape.BitmapMeshView
+        android:id="@+id/shapeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99cc99"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="100dp"
+        />
+</FrameLayout>

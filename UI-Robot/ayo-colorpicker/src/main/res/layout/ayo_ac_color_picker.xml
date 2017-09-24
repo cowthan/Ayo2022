@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <org.ayo.colorpicker.ColorPicker
+        android:id="@+id/picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <!-- Saturation/Value bar  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:text="Saturation/Value："
+            android:textSize="13sp"
+            />
+        <org.ayo.colorpicker.SVBar
+            android:id="@+id/svbar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+
+    <!-- Opacity bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:text="Opacity："
+            android:textSize="13sp"
+            />
+    <org.ayo.colorpicker.OpacityBar
+        android:id="@+id/opacitybar"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+
+    <!-- Saturation bar  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:text="Saturation："
+            android:textSize="13sp"
+            />
+    <org.ayo.colorpicker.SaturationBar
+        android:id="@+id/saturationbar"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+
+    <!-- Value bar  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:text="Value："
+            android:textSize="13sp"
+            />
+    <org.ayo.colorpicker.ValueBar
+        android:id="@+id/valuebar"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cb_old_color"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="是否显示old color："
+        android:textSize="15sp"
+        android:textColor="#000000"
+        />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="确定"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        />
+
+</LinearLayout>

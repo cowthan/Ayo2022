@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <include layout="@layout/layout_intro2" />
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="20dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:text="comment"
+        android:background="#669966"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <FrameLayout
+        android:id="@+id/shapeView_container"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="120dp"
+        />
+    <org.ayo.sample.menu.touch.TouchBoard
+        android:id="@+id/touchBoard_left"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <org.ayo.sample.menu.touch.TouchBoard
+        android:id="@+id/touchBoard_right"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        />
+</FrameLayout>

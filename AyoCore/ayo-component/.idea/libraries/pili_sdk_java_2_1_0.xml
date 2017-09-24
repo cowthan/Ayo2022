@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="pili-sdk-java-2.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.qiniu.pili/pili-sdk-java/2.1.0/20424738e060fa923a49a86dc1e9d779a66ee690/pili-sdk-java-2.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.qiniu.pili/pili-sdk-java/2.1.0/4b63c52a160ede00edebdbbfe087a4ce36d57f96/pili-sdk-java-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

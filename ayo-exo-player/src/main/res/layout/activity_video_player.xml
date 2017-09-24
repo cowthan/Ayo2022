@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_news_video"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/video_fixed_height">
+
+        <FrameLayout
+            android:id="@+id/video_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lib_color_black_transform50"/>
+
+        <TextView
+            android:id="@+id/duration"
+            style="@style/lib_style_common_itemsubtitle"
+            android:layout_alignBottom="@+id/thumb"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="12dp"
+            android:textColor="#ffffff"/>
+
+        <ImageView
+            android:id="@+id/play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/icon_video_play_btn"/>
+
+        <RelativeLayout
+            android:id="@+id/tip_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="#000">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/lib_style_text_size4"
+                    android:text="@string/not_wifi_tip"
+                    android:textColor="#ECECEC" />
+
+                <TextView
+                    android:id="@+id/video_size"
+                    style="@style/lib_style_text_size5"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#ECECEC" />
+
+                <TextView
+                    android:id="@+id/continue_play"
+                    style="@style/lib_style_button5_middle"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/continue_play" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:src="@drawable/icon_back_white"/>
+
+        <LinearLayout
+            android:id="@+id/video_failed_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/lib_style_common_itemtitle"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/video_loading_failed"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/retry_btn"
+                style="@style/lib_style_button5_small"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="@string/click_retry"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        ></LinearLayout>
+
+</LinearLayout>

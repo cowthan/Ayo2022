@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+
+Properties configer = new Properties()
+configer.load(new FileInputStream(file("../config.properties")))
+
+android {
+    compileSdkVersion Integer.valueOf(configer['compileSdkVersion'])
+    buildToolsVersion configer['buildToolsVersion']
+
+    defaultConfig {
+        minSdkVersion Integer.valueOf(configer['minSdkVersion'])
+        targetSdkVersion Integer.valueOf(configer['targetSdkVersion'])
+        versionCode Integer.valueOf(configer['versionCode'])
+        versionName configer['versionName']
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+
+
+}
+repositories {
+    flatDir {
+        dirs './libs', '../libs'
+    }
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile configer['lib_appcompat']
+    compile configer['lib_recyclerview']
+    compile configer['lib_design']
+    compile configer['lib_cardview']
+
+    compile(name: 'ayo-eventbus', ext: 'aar')
+    compile project(':hover')
+    compile 'com.larswerkman:HoloColorPicker:1.5'
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+
+
+}

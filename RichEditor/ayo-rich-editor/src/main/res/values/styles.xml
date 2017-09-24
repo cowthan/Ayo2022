@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <style name="comment_photo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/btn_upload_img_normal</item>
+        <item name="android:background">@drawable/thread_list_translate</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="comment_camera">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/camera</item>
+        <item name="android:background">@drawable/thread_list_translate</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="comment_video">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/icon_video</item>
+        <item name="android:background">@drawable/thread_list_translate</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="comment_link">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/icon_link</item>
+        <item name="android:background">@drawable/thread_list_translate</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="comment_at">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/at</item>
+        <item name="android:background">@drawable/thread_list_translate</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="comment_expression">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/icon_expression</item>
+        <item name="android:background">@drawable/thread_list_translate</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

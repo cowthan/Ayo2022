@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">懂你妹</string>
+
+    <string name="left_list_home">主页</string>
+    <string name="left_list_hot">用户管理</string>
+    <string name="left_list_find">发现新大陆</string>
+    <string name="left_list_nearBy">周边</string>
+    <string name="left_list_aboutMe">关于我</string>
+    <string name="left_list_settings">设置</string>
+</resources>

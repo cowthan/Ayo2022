@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rich_white">#ffffff</color>
+    <color name="rich_gray">#ECECEC</color>
+    <color name="rich_gray4f">#4F4F4F</color>
+    <color name="rich_gray51">#515151</color>
+    <color name="rich_grayf7">#F7F7F7</color>
+    <color name="rich_stand_dark_font_color">#555555</color>
+    <color name="rich_color_divider">#E9E9E9</color>
+    <color name="rich_expression_bg">#eef1f3</color>
+    <color name="rich_title">#16B13A</color>
+    <color name="comment_title">#DDDDDD</color>
+    <color name="transparent">#00000000</color>
+    <color name="common_dialog_bg">#ffffff</color>
+    <color name="line_background">#ffcccccc</color>
+    <color name="share_bg">#F5F5F5</color>
+</resources>

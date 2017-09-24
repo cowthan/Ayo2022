@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+
+Properties configer = new Properties()
+configer.load(new FileInputStream(file("../config.properties")))
+
+android {
+    compileSdkVersion Integer.valueOf(configer['compileSdkVersion'])
+    buildToolsVersion configer['buildToolsVersion']
+    defaultConfig {
+        applicationId "org.ayo.update.demo"
+        minSdkVersion Integer.valueOf(configer['minSdkVersion'])
+        targetSdkVersion Integer.valueOf(configer['targetSdkVersion'])
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile configer['lib_appcompat']
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile project(':ayo-updater')
+    compile configer['fastjson']
+}

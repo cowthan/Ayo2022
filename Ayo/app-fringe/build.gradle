@@ -1,0 +1,151 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+Properties signConfiger = new Properties()
+signConfiger.load(new FileInputStream(file("./signing.properties")))
+
+Properties configer = new Properties()
+configer.load(new FileInputStream(file("../config.properties")))
+
+android {
+    compileSdkVersion Integer.valueOf(configer['compileSdkVersion'])
+    buildToolsVersion configer['buildToolsVersion']
+
+    defaultConfig {
+        applicationId "com.iwomedia.taitai"
+        minSdkVersion Integer.valueOf(configer['minSdkVersion'])
+        targetSdkVersion Integer.valueOf(configer['targetSdkVersion'])
+        versionCode Integer.valueOf(configer['versionCode'])
+        versionName configer['versionName']
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+
+        buildConfigField "String", "QQ_ID", '"1103533063"'
+        buildConfigField "String", "SINA_ID", '"2357986794"'
+        buildConfigField "String", "REDIRECTURL", '"http://new1.bjzzcb.com"'
+        buildConfigField "String", "SINA_SCOPE", '"email,direct_messages_read,direct_messages_write,friendships_groups_read,friendships_groups_write,statuses_to_me_read,follow_app_official_microblog,invitation_write"'
+        buildConfigField "String", "WEIXIN_ID", '"wx39eb0a9059f8674b"'
+        buildConfigField "String", "WEIXIN_SECRET", '"85251daab113fc11354a7120098be65c"'
+        buildConfigField "String", "WEIXIN_SCOPE", '"snsapi_userinfo"'
+        buildConfigField "String", "WEIXIN_STATE", '"wxec493cede4464a21"'
+        buildConfigField "String", "MI_APP_ID", '"2882303761517137285"'
+        buildConfigField "String", "MI_APP_KEY", '"5391713767285"'
+        manifestPlaceholders = [
+                QQ_ID: "1103533063",
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "37250f16d832c50f0361d1be",
+                JPUSH_CHANNEL : "xx",
+        ]
+        ndk {
+            abiFilters "armeabi"
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64', 'armeabi-v8a', 'armeabi-v7a'
+        }
+    }
+    signingConfigs {
+        release {
+            keyAlias signConfiger['KEY_ALIAS']
+            keyPassword signConfiger['KEY_PASSWORD']
+            storeFile file(signConfiger['KEYSTORE_FILE'])
+            storePassword signConfiger['KEYSTORE_PASSWORD']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs = ['src/main/java']
+        }
+    }
+
+    productFlavors {
+        google {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "google"]
+        }
+    }
+
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
+afterEvaluate {
+    tasks.matching {
+        it.name.startsWith('dex')
+    }.each { dx ->
+        if (dx.additionalParameters == null) {
+            dx.additionalParameters = []
+        }
+        dx.additionalParameters += '--multi-dex' // enable multidex
+    }
+
+}
+
+afterEvaluate {
+    tasks.matching {
+        it.name.startsWith('dex')
+    }.each { dx ->
+        if (dx.additionalParameters == null) {
+            dx.additionalParameters = []
+        }
+        dx.additionalParameters += '--multi-dex' // enable multidex
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs', '../libs'
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile project(':ayocore')
+    compile(name: 'ayo-ui-image-picker-release', ext: 'aar')
+
+    compile(name: 'ayo-menu', ext: 'aar')
+    compile(name: 'ayo-eventbus', ext: 'aar')
+    compile(name: 'ayo-anim', ext: 'aar')
+    compile(name: 'ayo-img-camera', ext: 'aar')
+    compile(name: 'ayo-img-mediachooser', ext: 'aar')
+    compile project(':ayo-ui-list')
+    compile project(':ayo-ui-notify')
+    compile project(':ayo-ui-template')
+    compile project(':ayo-ui-view')
+    compile project(':ayo-ui-view-extra')
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    compile project(':vedio-player-manager')
+
+    compile project(':third-party-sdk')
+
+}

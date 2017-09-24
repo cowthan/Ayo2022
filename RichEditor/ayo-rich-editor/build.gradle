@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.github.dcendents.android-maven'
+//group='org.ayo.ui'
+
+
+Properties configer = new Properties()
+configer.load(new FileInputStream(file("../config.properties")))
+
+android {
+    compileSdkVersion Integer.valueOf(configer['compileSdkVersion'])
+    buildToolsVersion configer['buildToolsVersion']
+
+    defaultConfig {
+        minSdkVersion Integer.valueOf(configer['minSdkVersion'])
+        targetSdkVersion Integer.valueOf(configer['targetSdkVersion'])
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+//apply from: "bintrayUpload.gradle"
+repositories {
+    flatDir {
+        dirs 'libs', '../libs'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile project(':ayocore')
+
+    // 引imagepicker，必须捎带上以下所有库
+    compile(name: 'ayo-ui-image-picker-release', ext: 'aar')
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+    compile(name: 'ayo-ui-notify-release', ext: 'aar')
+    compile(name: 'ayo-anim', ext: 'aar')
+}

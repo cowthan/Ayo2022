@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AyoImagePicker.iml" filepath="$PROJECT_DIR$/AyoImagePicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ayo-ui-image-picker/ayo-ui-image-picker.iml" filepath="$PROJECT_DIR$/ayo-ui-image-picker/ayo-ui-image-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ayocore/ayocore.iml" filepath="$PROJECT_DIR$/ayocore/ayocore.iml" />
+    </modules>
+  </component>
+</project>

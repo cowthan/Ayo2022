@@ -1,0 +1,25 @@
+<resources>
+    <string name="rich_editor">ayo-rich-editor</string>
+    <string name="error_load_expressions">表情载入失败</string>
+    <string name="rich_refresh_again">重新加载</string>
+    <string name="expression_download_failed">表情下载失败</string>
+    <string name="expression_download_failed_no_engouth_space">存储空间不足，表情下载失败</string>
+    <string name="expression_total_max">最多只能输入%1$s个表情哦</string>
+    <string name="write_sth">正文</string>
+    <string name="hint_create_thread">发表贴子正文</string>
+    <string name="error_upload_video">上传视频失败</string>
+    <string name="add_pic_over_limit_show">上传图片总量超过限制</string>
+    <string name="sending">正在发送</string>
+    <string name="uncomment_nocontent">不能发表空贴</string>
+    <string name="not_supportupload">还不能支持上传</string>
+    <string name="not_supportupload1280">还不能支持上传高度超过1280px的GIF图片</string>
+    <string name="mb_gifpic">MB以上的GIF图片</string>
+    <string name="useless_pic">无效图片</string>
+    <string name="reminder">温馨提示</string>
+    <string name="publish_comment_failure">发表失败</string>
+    <string name="send_suc">发表成功</string>
+    <string name="thread_title_count_limit">标题最多36个字符</string>
+    <string name="thread_title">标题（选填，最多36个字符）</string>
+    <string name="atlast_sixpic">最多支持上传6张图片</string>
+    <string name="toast_upload_video_count">每个贴子只能上传1个小视频哦</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="picker_snow">#FFFAFA</color>
+    <color name="picker_lib_color_font7">#FFFFFF</color>
+    <color name="picker_transparent">#00000000</color>
+    <color name="picker_color_bg_half_transparent">#33000000</color>
+</resources>

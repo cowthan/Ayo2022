@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sel_item_bg_positive"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11"
+            />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            app:actualImageScaleType="centerCrop"
+            app:failureImage="@drawable/placeholder"
+            app:failureImageScaleType="centerCrop"
+            app:placeholderImage="@drawable/placeholder"
+            app:progressBarImageScaleType="centerCrop"
+            />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+Properties configer = new Properties()
+configer.load(new FileInputStream(file("../config.properties")))
+
+android {
+    compileSdkVersion Integer.valueOf(configer['compileSdkVersion'])
+    buildToolsVersion configer['buildToolsVersion']
+
+    defaultConfig {
+        applicationId "com.org.core.demo"
+        minSdkVersion Integer.valueOf(configer['minSdkVersion'])
+        targetSdkVersion Integer.valueOf(configer['targetSdkVersion'])
+        versionCode 1
+        versionName '1.0.0'
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs', '../libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':ayo-core')
+    compile project(':ayo-component')
+}

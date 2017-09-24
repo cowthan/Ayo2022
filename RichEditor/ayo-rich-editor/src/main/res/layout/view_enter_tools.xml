@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/rich_grayf7"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/rich_color_divider"/>
+
+    <LinearLayout
+        android:id="@+id/tool_types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rich_grayf7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <org.ayo.editor.emoj.ExpressionSelectView
+        android:id="@+id/expression_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+</merge>

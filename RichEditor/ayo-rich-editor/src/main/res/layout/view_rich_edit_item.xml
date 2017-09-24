@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.ayo.editor.editor.RichDeletableEditTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:cursorVisible="true"
+    android:hint="@string/write_sth"
+    android:lineSpacingExtra="5dp"
+    android:textColor="#444"
+    android:textCursorDrawable="@drawable/cursor_shape"
+    android:textSize="16sp">
+
+</org.ayo.editor.editor.RichDeletableEditTextView>

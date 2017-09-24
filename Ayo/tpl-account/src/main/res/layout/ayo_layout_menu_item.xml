@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <LinearLayout
+        android:id="@+id/ll_setting"
+        style="@style/item_of_personal"
+        >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="设置"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <org.ayo.view.textview.BadgeView
+            android:id="@+id/tv_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_indicator"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <View
+        android:id="@+id/devider"
+        android:layout_gravity="bottom"
+        style="@style/devider_of_personal" />
+</FrameLayout>

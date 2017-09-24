@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rich_expression_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_expression"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:background="@color/rich_gray"
+            android:paddingTop="22dp"/>
+
+        <org.ayo.editor.emoj.IndicatorView
+            android:id="@+id/indicator_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/rich_gray"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rich_white">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rich_color_divider"/>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scrollview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/rich_white"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/ll_tab_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"/>
+
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/view_expression_empty"
+        android:visibility="gone"/>
+</merge>

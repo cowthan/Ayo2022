@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Style_TextViewMediaTitle_View">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="Style_TextViewMediaTime_View">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+    <style name="SeekBar" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">3dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/seekbar_bg</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:minHeight">2.0dip</item>
+        <item name="android:thumb">@drawable/video_thumb</item>
+        <item name="android:thumbOffset">15.0dip</item>
+    </style>
+    <style name="lib_style_button5_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/lib_selector_btn5_font</item>
+        <item name="android:background">@drawable/lib_selector_btn5_bg</item>
+    </style>
+    <style name="lib_style_common_itemtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/lib_font_size4</item>
+        <item name="android:textColor">@color/lib_color_font2</item>
+    </style>
+    <style name="lib_style_button5_middle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/lib_selector_btn5_font</item>
+        <item name="android:background">@drawable/lib_selector_btn5_bg</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingLeft">21dp</item>
+        <item name="android:paddingRight">21dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="lib_style_text_size5">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/lib_font_size5</item>
+        <item name="android:textColor">@color/lib_color_font2</item>
+    </style>
+    <style name="lib_style_text_size4">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/lib_color_font2</item>
+        <item name="android:textSize">@dimen/lib_font_size4</item>
+    </style>
+    <style name="lib_style_common_itemsubtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/lib_font_size5</item>
+        <item name="android:textColor">@drawable/lib_selector_subnews_item_font</item>
+    </style>
+</resources>

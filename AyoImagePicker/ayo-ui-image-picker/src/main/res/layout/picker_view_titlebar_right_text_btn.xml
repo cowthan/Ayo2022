@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:textStyle="normal"
+    android:maxLines="1"
+    android:gravity="center"
+    android:textColor="#ffffff"
+    android:background="@drawable/picker_sel_title_bg"
+    android:textSize="14sp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
