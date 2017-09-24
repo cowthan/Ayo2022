@@ -1,0 +1,176 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+
+Properties configer = new Properties()
+configer.load(new FileInputStream(file("../config.properties")))
+
+android {
+    compileSdkVersion Integer.valueOf(configer['compileSdkVersion'])
+    buildToolsVersion configer['buildToolsVersion']
+
+    defaultConfig {
+        applicationId "com.iwomedia.roadbook"
+        minSdkVersion Integer.valueOf(configer['minSdkVersion'])
+        targetSdkVersion Integer.valueOf(configer['targetSdkVersion'])
+        versionCode 1
+        versionName '1.0'
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+
+        manifestPlaceholders = [
+                QQ_ID: "1104091687",
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "ab37fc6ba234832872a18454", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "xx", //暂时填写默认值即可.
+        ]
+        /*
+        roadbook包名下：
+
+        QQ
+        APP ID 1104091687
+        APP KEY zzRlYUKfUMaUQvDU
+
+        微信：
+        AppID：wx5be32f5cc3b95666
+        AppSecret="675a5f8ca74d98992c1062cf43d5aa26"
+
+        微博
+        AppKey="3712494637"
+        AppSecret="6b2c85766422060df0d088d432c25b97"
+        RedirectUrl="http://www.bjzzcb.com/"
+
+        极光：
+        AppKey ab37fc6ba234832872a18454
+        Master Secret  87f150b6b4e6ede1bf42771d
+
+
+         */
+        ndk {
+            abiFilters "armeabi"/*, "armeabi-v7a", "x86", "x86_64", "mips", "mips64", "arm64-v8a"*/
+        }
+//        packagingOptions {
+//            exclude "lib/arm64-v8a/libimagepipeline.so"
+//        }
+    }
+
+    signingConfigs {
+//        release {
+//            storeFile file("keystore.jks")
+//            storePassword "123456"
+//            keyAlias "byl"
+//            keyPassword "123456"
+//        }
+        release {
+            storeFile file("iwolushu.key")
+            storePassword "iwolushu"
+            keyAlias "lushu"
+            keyPassword "iwolushu"
+        }
+    }
+
+    buildTypes {
+        debug {//debug版
+            minifyEnabled false //打包时混淆
+            signingConfig signingConfigs.release
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs = ['src/main/java']
+        }
+    }
+
+//    productFlavors {
+//        google {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "google"]
+//        }
+//    }
+
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
+afterEvaluate {
+    tasks.matching {
+        it.name.startsWith('dex')
+    }.each { dx ->
+        if (dx.additionalParameters == null) {
+            dx.additionalParameters = []
+        }
+        dx.additionalParameters += '--multi-dex' // enable multidex
+    }
+
+}
+
+
+
+repositories {
+    flatDir {
+        dirs 'libs', '../libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(include: ['*.jar'], dir: '../libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.1'
+
+
+    compile project(':ayocore')
+    compile(name: 'ayo-ui-image-picker-release', ext: 'aar')
+    compile(name: 'ayo-rich-editor-release', ext: 'aar')
+    compile(name: 'ayo-updater-release', ext: 'aar')
+
+    compile project(':ayo-ui-list')
+    compile project(':ayo-ui-notify')
+    compile project(':ayo-ui-template')
+    compile project(':ayo-ui-view')
+    compile project(':ayo-ui-view-extra')
+
+    compile(name: 'ayo-menu', ext: 'aar')
+    compile(name: 'ayo-eventbus', ext: 'aar')
+    compile(name: 'ayo-anim', ext: 'aar')
+    compile(name: 'markdown', ext: 'aar')
+    compile(name: 'richtext', ext: 'aar')
+
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+
+    compile project(':hover')
+    compile project(':hover-wrapper')
+
+    compile project(':third-party-sdk')
+
+    compile project(':app-talker')
+
+    compile 'com.evernote:android-job:1.1.10'
+
+    // pinned section recyclerview的demo用到了
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    compile 'com.google.code.gson:gson:2.4'
+
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v2.6.1'
+
+}

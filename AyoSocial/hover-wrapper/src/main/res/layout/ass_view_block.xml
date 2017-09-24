@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:src="@drawable/hover_introduction_logo_no_shadow"
+        android:background="@drawable/circle"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <Button
+            android:id="@+id/btn_block"
+            android:text="Block Canary"
+            style="@style/CommonBtn" />
+    </LinearLayout>
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/ass_common_border">
+        <com.github.moduth.blockcanary.ui.DisplayView
+            android:id="@+id/viewBlock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+        <Button
+            android:id="@+id/btn_test_block_1"
+            android:text="模拟UI卡顿1"
+            style="@style/CommonBtn" />
+        <Button
+            android:id="@+id/btn_test_block_2"
+            android:text="模拟UI卡顿2"
+            style="@style/CommonBtn" />
+        <Button
+            android:id="@+id/btn_test_block_3"
+            android:text="模拟UI卡顿3"
+            style="@style/CommonBtn" />
+    </LinearLayout>
+</LinearLayout>

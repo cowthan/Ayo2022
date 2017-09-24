@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+
+
+Properties configer = new Properties()
+configer.load(new FileInputStream(file("../config.properties")))
+
+android {
+    compileSdkVersion Integer.valueOf(configer['compileSdkVersion'])
+    buildToolsVersion configer['buildToolsVersion']
+
+    defaultConfig {
+//        applicationId "com.byl.qrobot"
+        minSdkVersion Integer.valueOf(configer['minSdkVersion'])
+        targetSdkVersion Integer.valueOf(configer['targetSdkVersion'])
+        versionCode Integer.valueOf(configer['versionCode'])
+        versionName configer['versionName']
+
+//        ndk {
+//            abiFilters "armeabi"/*, "armeabi-v7a", "x86", "x86_64", "mips", "mips64", "arm64-v8a"*/
+//        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs = ['src/main/java']
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs', '../libs'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile project(':ayocore')
+
+    compile project(':ayo-ui-list')
+    compile project(':ayo-ui-notify')
+    compile project(':ayo-ui-template')
+    compile project(':ayo-ui-view')
+    compile project(':ayo-ui-view-extra')
+    compile(name: 'ayo-menu', ext: 'aar')
+    compile(name: 'ayo-eventbus', ext: 'aar')
+    compile(name: 'ayo-anim', ext: 'aar')
+    compile(name: 'markdown', ext: 'aar')
+    compile(name: 'richtext', ext: 'aar')
+
+}

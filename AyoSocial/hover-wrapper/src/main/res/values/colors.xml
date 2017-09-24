@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_dark">#212121</color>
+    <color name="hover_accent">#ff9600</color>
+    <color name="hover_base">#212121</color>
+    <color name="text_body">#7c7c7c</color>
+    <color name="text_subheader">#7c7c7c</color>
+    <color name="menu_item_title_color">#AAAAAA</color>
+
+    <color name="defaultVerboseColor">#0093C4</color>
+    <color name="defaultDebugColor">#FF6B68</color>
+    <color name="defaultErrorColor">#22BB00</color>
+    <color name="defaultInfoColor">#FFFFFF</color>
+    <color name="defaultWarningColor">#BB7D0E</color>
+    <color name="defaultTextColor">#FFFFFF</color>
+    <color name="defaultConsoleColor">#000000</color>
+
+    <color name="consoleColor">#000000</color>
+    <color name="verboseColor">#0093C4</color>
+    <color name="debugColor">#FF6B68</color>
+    <color name="errorColor">#22BB00</color>
+    <color name="infoColor">#FFFFFF</color>
+    <color name="warningColor">#BB7D0E</color>
+    <color name="assertColor">#ad0ebb</color>
+
+    <color name="mem_monitor_aa000000">#aa000000</color>
+    <color name="mem_monitor_00f0af">#00f0af</color>
+    <color name="mem_monitor_aa0000FF">#200000FF</color>
+
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="top|right"
+        android:src="@drawable/ic_recommend_arrow"
+        android:layout_marginRight="20dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="3dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corners_bg"
+        >
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_super"
+            android:paddingLeft="20dp"
+            android:background="@drawable/dg_sel_common_rounded_bg_top"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_scan_qr_code"
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:text="二维码"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_zxing"
+            android:paddingLeft="20dp"
+            android:background="@drawable/dg_sel_common_rounded_bg_bootom"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_scan_super"
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:text="超级图片"
+                android:gravity="center_vertical|left"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>

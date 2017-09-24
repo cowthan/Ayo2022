@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Sweet_Rotate3dAnimation">
+        <attr name="Sweet_rollType" format="enum">
+            <enum name="x" value="0"/>
+            <enum name="y" value="1"/>
+            <enum name="z" value="2"/>
+        </attr>
+        <attr name="Sweet_fromDeg" format="float" />
+        <attr name="Sweet_toDeg" format="float" />
+        <attr name="Sweet_pivotX" format="fraction"/>
+        <attr name="Sweet_pivotY" format="fraction" />
+    </declare-styleable>
+
+    <declare-styleable name="Sweet_ProgressWheel">
+        <attr name="Sweet_matProg_progressIndeterminate" format="boolean" />
+        <attr name="Sweet_matProg_barColor" format="color" />
+        <attr name="Sweet_matProg_rimColor" format="color" />
+        <attr name="Sweet_matProg_rimWidth" format="dimension" />
+        <attr name="Sweet_matProg_spinSpeed" format="float" />
+        <attr name="Sweet_matProg_barSpinCycleTime" format="integer" />
+        <attr name="Sweet_matProg_circleRadius" format="dimension" />
+        <attr name="Sweet_matProg_fillRadius" format="boolean" />
+        <attr name="Sweet_matProg_barWidth" format="dimension" />
+        <attr name="Sweet_matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+</resources>

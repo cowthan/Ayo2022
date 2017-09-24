@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="top|right"
+        android:src="@drawable/ic_recommend_arrow"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="3dp"
+        />
+
+    <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+        android:background="@drawable/rounded_corners_bg"
+      android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+          <TextView
+                android:id="@+id/tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="可选理由：2/15"
+                android:textColor="#999999"
+                android:textSize="13sp"
+                android:layout_marginTop="15dp"
+              />
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:background="@drawable/dg_bg_recomment_confirm"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp" />
+
+        <View
+            android:id="@+id/devider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#e9e9e9"
+            android:layout_below="@+id/tv_confirm"
+            android:layout_marginTop="10dp"
+            />
+
+        <FrameLayout
+            android:layout_below="@+id/devider"
+            android:layout_alignLeft="@+id/tv_label"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="80dp">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/slider"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                />
+        </FrameLayout>
+
+        
+        <!--<com.iwomedia.zhaoyang.widget.FixedRowSlider
+            android:id="@+id/slider"
+            android:layout_below="@+id/devider"
+            android:layout_alignLeft="@+id/tv_label"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_height="140dp">
+        </com.iwomedia.zhaoyang.widget.FixedRowSlider>-->
+        
+    </RelativeLayout>
+</FrameLayout>

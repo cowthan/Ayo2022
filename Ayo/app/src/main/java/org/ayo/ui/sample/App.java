@@ -60,8 +60,6 @@ public class App extends Application{
         Trace.setLogToFile(false);
         AppCore.getDefault().init(this, DEBUG);
         AppCore.getDefault().setSDRoot("ayo");
-        AyoViewLib.init(this);
-//        log.init(true, "ayo-sample_divider");
 
         //初始化Ayo SystemBarExtra
         AyoUI_notify.init(app);
