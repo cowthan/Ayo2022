@@ -33,6 +33,8 @@ import org.ayo.ui.sample.material.DemoCoordinator_6_Activity;
 import org.ayo.ui.sample.material.DemoCoordinator_7_Activity;
 import org.ayo.ui.sample.material.DemoTabLayoutActivity;
 import org.ayo.ui.sample.material.DemoToolbarActivity;
+import org.ayo.ui.sample.material.ElevationDemoActivity;
+import org.ayo.ui.sample.material.PaletteDemoActivity;
 import org.ayo.ui.sample.nano.NanoHttpServerDemo;
 import org.ayo.ui.sample.notify.DemoActionSheetActivity;
 import org.ayo.ui.sample.notify.DemoLoadingDialogActivity;
@@ -60,6 +62,7 @@ import org.ayo.ui.sample.textview.html.DemoOldHtmlActivity;
 import org.ayo.ui.sample.textview.span.AwesomeTextViewActivity;
 import org.ayo.ui.sample.update.UpdateTestActivity;
 import org.ayo.ui.sample.verticalbanner.VerticalBannerActivity;
+import org.ayo.ui.sample.video.DemoVideoComporessActivity;
 import org.ayo.ui.sample.view_learn.BlinkTextViewDemo;
 import org.ayo.ui.sample.view_learn.BlockLayoutDemo;
 import org.ayo.ui.sample.view_learn.CircleLoadingViewDemo;
@@ -169,6 +172,10 @@ public class MainnActivity extends MainPagerActivity {
                 menuItem4.addLeaf(new Leaf("Ripple", "", null));
                 menuItem4.addLeaf(new Leaf("IconTextGroupView", "", null));
                 menuItem4.addLeaf(new Leaf("WheelPicker", "", WheelPickerctivity.class, 1));
+                menuItem4.addLeaf(new Leaf("---Pallete---", "", null, 1));
+                menuItem4.addLeaf(new Leaf("从Bitmap提取颜色，并渲染状态栏", "", PaletteDemoActivity.class, 1));
+                menuItem4.addLeaf(new Leaf("---视图和阴影---", "", null, 1));
+                menuItem4.addLeaf(new Leaf("elevation支持：阴影", "", ElevationDemoActivity.class, 1));
             }
         }
 
@@ -212,8 +219,9 @@ public class MainnActivity extends MainPagerActivity {
                 menuItem.addLeaf(new Leaf("账号管理模板", "", DemoAccount.class));
                 menuItem.addLeaf(new Leaf("自动升级模块", "", UpdateTestActivity.class));
                 menuItem.addLeaf(new Leaf("调试日志", "", DemoLogReporterActivity.class, 1));
-                menuItem.addLeaf(new Leaf("选图，选视频", "", DemoPickerActivity.class, 1));
                 menuItem.addLeaf(new Leaf("富文本编辑器", "", CreateThreadActivity.class, 1));
+                menuItem.addLeaf(new Leaf("选图，选视频", "", DemoPickerActivity.class, 1));
+                menuItem.addLeaf(new Leaf("视频压缩", "", DemoVideoComporessActivity.class, 1));
 
             }
 

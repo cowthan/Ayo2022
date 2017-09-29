@@ -137,6 +137,8 @@ dependencies {
     compile 'com.android.support:multidex:1.0.1'
 
 
+    compile configer['lib_palette']
+
     compile project(':ayocore')
     compile(name: 'ayo-ui-image-picker-release', ext: 'aar')
     compile(name: 'ayo-rich-editor-release', ext: 'aar')
@@ -172,5 +174,7 @@ dependencies {
     compile 'com.google.code.gson:gson:2.4'
 
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v2.6.1'
+
+    compile 'com.googlecode.mp4parser:isoparser:1.0.6'
 
 }
