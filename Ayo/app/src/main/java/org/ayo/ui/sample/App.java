@@ -65,52 +65,9 @@ public class App extends Application{
         AyoUI_notify.init(app);
         AyoViewLib.init(app);
 
-        registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
-            @Override
-            public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
-
-            }
-
-            @Override
-            public void onActivityStarted(Activity activity) {
-
-            }
-
-            @Override
-            public void onActivityResumed(Activity activity) {
-
-            }
-
-            @Override
-            public void onActivityPaused(Activity activity) {
-
-            }
-
-            @Override
-            public void onActivityStopped(Activity activity) {
-
-            }
-
-            @Override
-            public void onActivitySaveInstanceState(Activity activity, Bundle outState) {
-
-            }
-
-            @Override
-            public void onActivityDestroyed(Activity activity) {
-
-            }
-        });
-
         //x.Ext.init(this);
 
         //初始化日志类
-
-        //初始化网络图片加载工具类
-//        VanGogh.initImageBig(R.mipmap.loading_big);
-//        VanGogh.initImageMiddle(R.mipmap.loading_big);
-//        VanGogh.initImageSmall(R.mipmap.loading_big);
-//        VanGogh.init(this, new ImageLoaderUseUIL(this, AppCore.ROOT));
 
         //初始化全局异常处理
         setupTheme();

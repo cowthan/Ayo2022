@@ -169,12 +169,15 @@ dependencies {
     compile 'com.evernote:android-job:1.1.10'
 
     // pinned section recyclerview的demo用到了
-    compile 'com.github.bumptech.glide:glide:3.7.0'
+//    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile "com.github.bumptech.glide:glide:3.7.0"
 
     compile 'com.google.code.gson:gson:2.4'
 
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v2.6.1'
 
     compile 'com.googlecode.mp4parser:isoparser:1.0.6'
+
+    compile 'com.shuyu:GSYVideoPlayer:2.0.8'
 
 }
