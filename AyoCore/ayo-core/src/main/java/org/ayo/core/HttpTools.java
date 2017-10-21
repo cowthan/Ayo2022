@@ -69,8 +69,10 @@ public class HttpTools {
             in = new BufferedReader(
                     new InputStreamReader(conn.getInputStream()));
             String line;
+            int lineNum = 0;
             while ((line = in.readLine()) != null) {
-                result += "/n" + line;
+                result += (lineNum == 0 ? "": "\n") + line;
+                lineNum++;
             }
         } catch (Exception e) {
             System.out.println("发送GET请求出现异常！" + e);

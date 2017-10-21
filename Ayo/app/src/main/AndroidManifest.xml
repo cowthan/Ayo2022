@@ -317,6 +317,11 @@
             android:hardwareAccelerated="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name="org.ayo.ui.sample.video.player.VideoPlayerCommonActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

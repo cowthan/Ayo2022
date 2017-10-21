@@ -248,7 +248,7 @@ public class ThumbModel implements Comparable<ThumbModel>, Parcelable {
         dest.writeString(this.path);
         dest.writeString(this.fileName);
         dest.writeString(this.content);
-        dest.writeDouble(this.duration);
+        dest.writeLong(this.duration);
         dest.writeString(this.videoType);
         dest.writeInt(this.videoWidth);
         dest.writeInt(this.videoHeight);

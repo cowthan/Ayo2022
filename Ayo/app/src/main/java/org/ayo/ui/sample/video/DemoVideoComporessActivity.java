@@ -15,6 +15,7 @@ import org.ayo.log.Trace;
 import org.ayo.sample.R;
 import org.ayo.ui.sample.video.compress.BaseCompressListener;
 import org.ayo.ui.sample.video.compress.VideoCompress;
+import org.ayo.ui.sample.video.player.VideoPlayerCommonActivity;
 
 import java.util.List;
 
@@ -95,6 +96,9 @@ public class DemoVideoComporessActivity extends MasterActivity {
             public void onSuccess(String outputPath) {
                 tv_info.append("结束：" + outputPath + "\n");
                 progressDialog.dismiss();
+                Intent intent = new Intent(getActivity(), VideoPlayerCommonActivity.class);
+                intent.putExtra("url", "file://" + outputPath);
+                getActivity().startActivity(intent);
             }
 
             @Override
