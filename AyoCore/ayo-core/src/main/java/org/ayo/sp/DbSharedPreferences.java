@@ -17,9 +17,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * Sqlite存储的SharedPreferences Created by hujinghui on 16/4/21.
- */
 public class DbSharedPreferences implements SharedPreferences {
     private static final String TAG = "DbSharedPreferences";
 

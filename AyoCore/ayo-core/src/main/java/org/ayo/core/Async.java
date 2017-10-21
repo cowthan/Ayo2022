@@ -41,22 +41,6 @@ public class Async extends AsyncTask<Void, Void, Void> {
 		return this;
 	}
 
-
-
-	public void test(){
-		Async.newTask(new Runnable() {
-			@Override
-			public void run() {
-
-			}
-		}).post(new Runnable() {
-			@Override
-			public void run() {
-
-			}
-		}).go();
-	}
-
 	public static void post(Runnable r, long delayMillis){
 		new android.os.Handler(Looper.getMainLooper()).postDelayed(r, delayMillis);
 	}

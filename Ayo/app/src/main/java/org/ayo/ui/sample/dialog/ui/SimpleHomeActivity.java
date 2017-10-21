@@ -1,6 +1,5 @@
 package org.ayo.ui.sample.dialog.ui;
 
-import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -19,7 +18,6 @@ import org.ayo.component.MasterFragment;
 import org.ayo.ui.sample.base.AyoActivity;
 
 public class SimpleHomeActivity extends AyoActivity {
-    private Context mContext;
     private final String[] mItems = {"Dialog"};
     private final Class<?>[] mClazzs = {DialogHomeActivity.class};
     private DisplayMetrics mDisplayMetrics;
@@ -31,7 +29,7 @@ public class SimpleHomeActivity extends AyoActivity {
 
     @Override
     protected View getLayoutView() {
-        ListView lv = new ListView(mContext);
+        ListView lv = new ListView(getActivity());
         lv.setCacheColorHint(Color.TRANSPARENT);
         lv.setBackgroundColor(Color.WHITE);
         lv.setFadingEdgeLength(0);
@@ -48,10 +46,8 @@ public class SimpleHomeActivity extends AyoActivity {
 
     @Override
     protected void onCreate2(View view, @Nullable Bundle bundle) {
-        mContext = getActivity();
+//        mContext = getActivity();
         mDisplayMetrics = getResources().getDisplayMetrics();
-
-
     }
 
     @Override
@@ -86,7 +82,7 @@ public class SimpleHomeActivity extends AyoActivity {
 
             int padding = (int) (mDisplayMetrics.density * 10);
 
-            TextView tv = new TextView(mContext);
+            TextView tv = new TextView(getActivity());
             tv.setText(mItems[position]);
             tv.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
             tv.setTextColor(Color.parseColor("#468ED0"));

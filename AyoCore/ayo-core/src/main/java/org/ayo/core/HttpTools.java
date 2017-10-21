@@ -36,7 +36,7 @@ public class HttpTools {
      *            请求参数，请求参数应该是name1=value1&name2=value2的形式。
      * @return URL所代表远程资源的响应
      */
-    private static String get(String url, Map<String, String> params, Map<String, String> header) {
+    public static String get(String url, Map<String, String> params, Map<String, String> header) {
         String result = "";
         BufferedReader in = null;
         try {
@@ -107,7 +107,7 @@ public class HttpTools {
             // http的连接类
             HttpURLConnection httpURLConnection = (HttpURLConnection) urlConnection;
             // 设定请求的方法，默认是GET
-            httpURLConnection.setRequestMethod("POST");
+            httpURLConnection.setRequestMethod("GET");
             // 设置字符编码
             httpURLConnection.setRequestProperty("Charset", "UTF-8");
             // 打开到此 URL 引用的资源的通信链接（如果尚未建立这样的连接）。
@@ -128,6 +128,9 @@ public class HttpTools {
 
             String path = downloadDir + File.separatorChar + fileFullName;
             file = new File(path);
+            if(file.exists()){
+                return file;
+            }
             if (!file.getParentFile().exists()) {
                 file.getParentFile().mkdirs();
             }

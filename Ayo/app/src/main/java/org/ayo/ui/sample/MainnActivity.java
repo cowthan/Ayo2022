@@ -96,7 +96,7 @@ public class MainnActivity extends MainPagerActivity {
         Menu m1 = new Menu("View", R.drawable.weixin_normal, R.drawable.weixin_pressed);
         menus.add(m1);
         {
-            MenuItem menuItem1 = new MenuItem("基本效果", R.drawable.weixin_normal, R.drawable.weixin_pressed);
+            MenuItem menuItem1 = new MenuItem("基本", R.drawable.weixin_normal, R.drawable.weixin_pressed);
             m1.addMenuItem(menuItem1);
             {
                 menuItem1.addLeaf(new Leaf("智能机器人", "", ChatActivity.class, 1));
@@ -122,6 +122,13 @@ public class MainnActivity extends MainPagerActivity {
 
                 menuItem1.addLeaf(new Leaf("----其他----", "", null));
                 menuItem1.addLeaf(new Leaf("Nice Spinner", "", DemoSpinnerPage.class));
+            }
+
+            menuItem1 = new MenuItem("高级", R.drawable.weixin_normal, R.drawable.weixin_pressed);
+            m1.addMenuItem(menuItem1);
+            {
+                menuItem1.addLeaf(new Leaf("----scroll研究----", "", null));
+                menuItem1.addLeaf(new Leaf("onTouch和MotionEvent", "", DemoSpinnerPage.class));
             }
 
         }

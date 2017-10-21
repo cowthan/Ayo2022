@@ -1,1 +1,1 @@
-include ':app', ':ayo-core', ':ayo-component'
+include ':app', ':ayo-core', ':ayo-component', ':ayo-menu-lib'

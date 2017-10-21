@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/ayo-component" />
             <option value="$PROJECT_DIR$/ayo-core" />
+            <option value="$PROJECT_DIR$/ayo-menu-lib" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
