@@ -12,7 +12,6 @@ import android.widget.FrameLayout;
 
 import org.ayo.component.MasterFragment;
 import org.ayo.component.R;
-import org.ayo.component.StateModel;
 import org.ayo.component.indicator.OnTabSelectedListener;
 import org.ayo.component.indicator.PageIndicator;
 import org.ayo.fragmentation.SupportFragment;
@@ -59,12 +58,15 @@ public abstract class MasterPagerFragment extends MasterFragment{
         mViewPager.setAdapter(new SimpplePagerFragmentAdapter(getChildFragmentManager()));
 
         int defaultIndex = getDefaultItemPosition();
-        pageIndicator = createPageIndicator();
-        pageIndicator.setCurrentItem(defaultIndex);
-        mViewPager.setCurrentItem(defaultIndex);
 
-        indicator_container.addView((View) pageIndicator, createIndicatorParams());
+        pageIndicator = createPageIndicator();
+        if(pageIndicator != null){
+            pageIndicator.setCurrentItem(defaultIndex);
+            indicator_container.addView((View) pageIndicator, createIndicatorParams());
+        }
         setupIndicator();
+
+        mViewPager.setCurrentItem(defaultIndex);
     }
 
     final protected FrameLayout.LayoutParams createIndicatorParams(){

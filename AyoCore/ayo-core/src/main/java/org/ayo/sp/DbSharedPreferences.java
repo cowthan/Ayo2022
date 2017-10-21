@@ -108,7 +108,7 @@ public class DbSharedPreferences implements SharedPreferences {
 //                        key
 //                    });
             SQLiteDatabase db = mOpenHelper.getWritableDatabase();
-            int count = db.delete(DbHelper.TABLE_NAME, DbHelper.COLUMNS.SP_KEY, new String[] {key});
+            int count = db.delete(DbHelper.TABLE_NAME, DbHelper.COLUMNS.SP_KEY + " = ? ", new String[] {key});
             Trace.e(TAG, "remove key:" + key);
             Trace.e(TAG, "remove count:" + count);
             return this;

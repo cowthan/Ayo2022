@@ -36,7 +36,7 @@ public class HttpTools {
      *            请求参数，请求参数应该是name1=value1&name2=value2的形式。
      * @return URL所代表远程资源的响应
      */
-    private static String get(String url, Map<String, String> params, Map<String, String> header) {
+    public static String get(String url, Map<String, String> params, Map<String, String> header) {
         String result = "";
         BufferedReader in = null;
         try {
@@ -69,8 +69,10 @@ public class HttpTools {
             in = new BufferedReader(
                     new InputStreamReader(conn.getInputStream()));
             String line;
+            int lineNum = 0;
             while ((line = in.readLine()) != null) {
-                result += "/n" + line;
+                result += (lineNum == 0 ? "": "\n") + line;
+                lineNum++;
             }
         } catch (Exception e) {
             System.out.println("发送GET请求出现异常！" + e);
