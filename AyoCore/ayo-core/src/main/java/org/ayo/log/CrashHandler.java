@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import org.ayo.AppCore;
 import org.ayo.core.Lang;
-import org.ayo.file.FilePath;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -154,7 +153,14 @@ public class CrashHandler implements UncaughtExceptionHandler {
         try {  
             long timestamp = System.currentTimeMillis();  
             String fileName = "crash-" + new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date()) + CRASH_REPORTER_EXTENSION;
-            File f = new File(FilePath.getDirInRoot("errorlog/" + fileName));
+
+            String errorLogDir = AppCore.ROOT + "log/";
+            File dir = new File(errorLogDir);
+            if(!dir.exists()){
+                dir.mkdirs();
+            }
+
+            File f = new File(dir, fileName);
             FileOutputStream trace = new FileOutputStream(f);
             mDeviceCrashInfo.store(trace, "");  
             trace.flush();  

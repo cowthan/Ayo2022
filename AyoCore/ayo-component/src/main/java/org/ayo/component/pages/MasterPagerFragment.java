@@ -63,8 +63,8 @@ public abstract class MasterPagerFragment extends MasterFragment{
         if(pageIndicator != null){
             pageIndicator.setCurrentItem(defaultIndex);
             indicator_container.addView((View) pageIndicator, createIndicatorParams());
+            setupIndicator();
         }
-        setupIndicator();
 
         mViewPager.setCurrentItem(defaultIndex);
     }

@@ -89,4 +89,9 @@ public class UserCenter {
         DbSharedPreferences.getInstance(AppCore.app()).edit().remove("current-user-20179878").commit();
     }
 
+    public void refreshUserInfo(Object user){
+        currentUser = user;
+        UserDefault.putObject("current-user-20179878", user);
+    }
+
 }

@@ -278,12 +278,12 @@ public class DbSharedPreferences implements SharedPreferences {
                 new String[] {DbHelper.COLUMNS.SP_VALUE},
                 DbHelper.COLUMNS.SP_KEY + " = ? ",
                 new String[] {key}, null, null, null);
-        if (cursor == null || cursor.moveToFirst()) {
-            Trace.e(TAG, "contains:false");
-            return false;
+        if (cursor != null && cursor.moveToFirst()) {
+            Trace.e(TAG, "contains:true");
+            return true;
         }
         Trace.e(TAG, "contains:true");
-        return true;
+        return false;
     }
 
     @Override
