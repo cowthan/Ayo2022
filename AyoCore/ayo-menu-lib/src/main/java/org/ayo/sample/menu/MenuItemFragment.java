@@ -87,6 +87,8 @@ public class MenuItemFragment extends MasterFragment {
 			@Override
 			public void onClick(View v) {
 				if(leaf.attacherClass != null){
+//					Intent intent = new Intent(getActivity(), leaf.attacherClass);
+//					getActivity().startActivity(intent);
 					Master.startPage(getActivity(), leaf.attacherClass, null);
 				}else if(leaf.activityClass != null){
 					Intent intent = new Intent(getActivity(), leaf.activityClass);

@@ -33,8 +33,7 @@ repositories {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile project(':ayo-core')
-    compile project(':ayo-component')
+    compile project(':ayokit')
     compile project(':ayo-menu-lib')
     compile 'org.greenrobot:eventbus:3.0.0'
 }

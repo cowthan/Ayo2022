@@ -9,9 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/ayo-component" />
-            <option value="$PROJECT_DIR$/ayo-core" />
             <option value="$PROJECT_DIR$/ayo-menu-lib" />
+            <option value="$PROJECT_DIR$/ayocore" />
+            <option value="$PROJECT_DIR$/ayokit" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="libammsdk-dqd-old">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../third-party-sdk/libs/libammsdk-dqd-old.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

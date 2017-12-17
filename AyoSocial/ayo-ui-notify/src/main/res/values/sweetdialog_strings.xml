@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="ayo_dialog_default_title">Here\'s a message!</string>
-    <string name="ayo_dialog_ok">OK</string>
-    <string name="ayo_dialog_cancel">Cancel</string>
-    <string name="ayo_loading">Loading...</string>
-</resources>

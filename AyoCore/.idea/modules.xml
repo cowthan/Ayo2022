@@ -4,9 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AyoCore.iml" filepath="$PROJECT_DIR$/AyoCore.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ayo-component/ayo-component.iml" filepath="$PROJECT_DIR$/ayo-component/ayo-component.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ayo-core/ayo-core.iml" filepath="$PROJECT_DIR$/ayo-core/ayo-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/ayo-menu-lib/ayo-menu-lib.iml" filepath="$PROJECT_DIR$/ayo-menu-lib/ayo-menu-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ayocore/ayocore.iml" filepath="$PROJECT_DIR$/ayocore/ayocore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ayokit/ayokit.iml" filepath="$PROJECT_DIR$/ayokit/ayokit.iml" />
     </modules>
   </component>
 </project>
