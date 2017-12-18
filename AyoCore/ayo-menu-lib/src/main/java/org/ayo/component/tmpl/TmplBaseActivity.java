@@ -11,7 +11,7 @@ import org.ayo.component.FragmentFactory;
 import org.ayo.component.MasterActivity;
 import org.ayo.component.MasterFragment;
 import org.ayo.component.StateModel;
-import org.ayo.kit.R;
+import org.ayo.sample.menu.R;
 
 import java.util.Set;
 

@@ -4,6 +4,54 @@
     <application
         android:allowBackup="true"
         android:supportsRtl="true">
+        <activity
+            android:name="org.ayo.component.tmpl.TmplStarndardActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="standard" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ayo" android:host="page" android:path="/standard" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.ayo.component.tmpl.TmplSingleTopActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"  >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ayo" android:host="page" android:path="/singletop" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.ayo.component.tmpl.TmplSingleTaskActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"  >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ayo" android:host="page" android:path="/singletask" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.ayo.component.tmpl.TmplSingleInstanceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"  >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ayo" android:host="page" android:path="/singleinstance" />
+            </intent-filter>
+        </activity>
 
     </application>
 
