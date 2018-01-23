@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color2"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar_layout"
+        layout="@layout/view_titlebar" />
+
+    <TextView
+        android:id="@+id/tv_selected_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="12dp"
+        android:text="已添加0人 | 共需要1人"
+        android:textColor="@color/lib_color_font4"
+        android:textSize="@dimen/lib_font_size5" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <org.ayo.mall.view.xlistview.XListView
+                android:id="@+id/list_view"
+                style="@style/xlistview"
+                android:divider="@color/transparent"
+                android:dividerHeight="7dp"
+                />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include
+            layout="@layout/mall_view_list_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_bg2" />
+
+
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_audience_confirm"
+            android:gravity="center"
+            android:text="确认添加"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/lib_font_size4" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/mall_audience_add3"
+        android:textColor="@color/lib_color_font1"
+        android:textSize="@dimen/lib_font_size2" />
+</LinearLayout>

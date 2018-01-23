@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import org.ayo.JsonUtils;
 import org.ayo.core.Lang;
-import org.ayo.http.utils.JsonUtils;
 import org.ayo.log.LogReporter;
 import org.ayo.sample.R;
 

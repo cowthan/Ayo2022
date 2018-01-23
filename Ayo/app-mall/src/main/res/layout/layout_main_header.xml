@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginTop="200dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_three">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/mainWhite" />
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_avatar"
+            app:civ_border_color="@color/mainWhite"
+            app:civ_border_overlay="true"
+            app:civ_border_width="@dimen/two"
+            android:layout_width="@dimen/sixty_three"
+            android:layout_height="@dimen/sixty_three"
+            android:layout_centerInParent="true"
+            android:src="@drawable/pn_image_home" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eleven"
+            android:gravity="center"
+            android:text="SiberiaDante"
+            android:textColor="@color/mainBlack"
+            android:textSize="@dimen/font_21"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thirteen"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_major"
+                style="@style/pn_CustomLabelBlueBg"
+                android:text="PRO" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                style="@style/pn_CustomLabelBlueGenderStroke"
+                android:drawableStart="@drawable/pn_icon_gender_woman"
+                android:text="30"
+                android:textColor="@color/mainRed" />
+
+            <TextView
+                android:id="@+id/tv_level_num"
+                style="@style/pn_CustomLabelBlack"
+                android:text="Lv.4" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twelve"
+            android:gravity="center"
+            android:text="https://github.com/SiberiaDante"
+            android:textColor="@color/mainGrayC6"
+            android:textSize="@dimen/font_11" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/forty_two"
+            android:layout_marginStart="@dimen/forty_two"
+            android:layout_marginTop="@dimen/thirteen"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pn_icon_position" />
+
+                <TextView
+                    android:id="@+id/tv_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中国·GitHub"
+                    android:textColor="@color/mainBlack"
+                    android:textSize="@dimen/font_12" />
+            </LinearLayout>
+
+            <View style="@style/pn_LineOneVertical" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_follow_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/two"
+                    android:text="12"
+                    android:textColor="@color/mainBlack"
+                    android:textSize="@dimen/font_12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/sixteen"
+                    android:text="@string/follow"
+                    android:textColor="@color/mainBlack"
+                    android:textSize="@dimen/font_12" />
+
+                <TextView
+                    android:id="@+id/tv_fans_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/two"
+                    android:text="12"
+                    android:textColor="@color/mainBlack"
+                    android:textSize="@dimen/font_12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/sixteen"
+                    android:text="@string/fans"
+                    android:textColor="@color/mainBlack"
+                    android:textSize="@dimen/font_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/pn_LineOnePointFive"
+            android:layout_marginBottom="@dimen/twelve"
+            android:layout_marginEnd="@dimen/forty_two"
+            android:layout_marginStart="@dimen/forty_two"
+            android:layout_marginTop="@dimen/twelve" />
+
+        <TextView
+            android:id="@+id/tv_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/forty_two"
+            android:layout_marginStart="@dimen/forty_two"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/four"
+            android:maxLines="2"
+            android:text="博客：http://www.cnblogs.com/shen-hua/"
+            android:textColor="@color/mainGrayC6"
+            android:textSize="@dimen/font_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/twelve"
+            android:layout_marginTop="@dimen/seventeen"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_authentication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pn_stroke_corners__black_one"
+                    android:paddingBottom="@dimen/five"
+                    android:paddingEnd="@dimen/thirteen"
+                    android:paddingStart="@dimen/thirteen"
+                    android:paddingTop="@dimen/five"
+                    android:text="头衔认证"
+                    android:textColor="@color/mainBlack" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_edit_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pn_solid_corners_black_one"
+                    android:paddingBottom="@dimen/five"
+                    android:paddingEnd="@dimen/thirteen"
+                    android:paddingStart="@dimen/thirteen"
+                    android:paddingTop="@dimen/five"
+                    android:text="编辑资料"
+                    android:textColor="@color/mainWhite" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainGrayF8"
+            android:paddingBottom="@dimen/eight"
+            android:paddingEnd="@dimen/forty_two"
+            android:paddingStart="@dimen/forty_two"
+            android:paddingTop="@dimen/seventeen">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/pn_UserCenterIntegralTextView"
+                    android:drawableStart="@drawable/pn_icon_integral_red"
+                    android:text="@string/integral" />
+
+                <TextView
+                    android:id="@+id/tv_integral_num"
+                    style="@style/pn_UserCenterIntegralNumTextView"
+                    android:text="12000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/pn_UserCenterIntegralTextView"
+                    android:drawableStart="@drawable/pn_icon_integral_red"
+                    android:text="@string/Japanese_currency" />
+
+                <TextView
+                    android:id="@+id/tv_japanese_currency"
+                    style="@style/pn_UserCenterIntegralNumTextView"
+                    android:text="12000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainGrayF8"
+            android:paddingBottom="@dimen/seventeen"
+            android:paddingEnd="@dimen/forty_two"
+            android:paddingStart="@dimen/forty_two"
+            android:paddingTop="@dimen/eight">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/pn_UserCenterIntegralTextView"
+                    android:drawableStart="@drawable/pn_icon_prestige"
+                    android:text="@string/prestige" />
+
+                <TextView
+                    android:id="@+id/tv_prestige"
+                    style="@style/pn_UserCenterIntegralNumTextView"
+                    android:text="12000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/pn_UserCenterIntegralTextView"
+                    android:drawableStart="@drawable/pn_icon_friendliness"
+                    android:text="@string/friendliness" />
+
+                <TextView
+                    android:id="@+id/tv_friendliness"
+                    style="@style/pn_UserCenterIntegralNumTextView"
+                    android:text="12000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/twelve"
+            android:paddingEnd="@dimen/sixteen"
+            android:paddingStart="@dimen/sixteen"
+            android:paddingTop="@dimen/twelve">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/interest_label"
+                android:textColor="@color/mainBlack"
+                android:textSize="@dimen/font_15" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_label_one"
+                    style="@style/pn_UserCenterLabel"
+                    android:text="GitHub" />
+
+                <TextView
+                    android:id="@+id/tv_label_two"
+                    style="@style/pn_UserCenterLabel"
+                    android:text="GitHub" />
+
+                <TextView
+                    android:id="@+id/tv_label_three"
+                    style="@style/pn_UserCenterLabel"
+                    android:text="GitHub" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_edit_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/pn_icon_arrow_right"
+                android:drawablePadding="@dimen/six"
+                android:text="@string/edit"
+                android:textColor="@color/mainGrayC6"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+
+        <View style="@style/pn_LineEight" />
+    </LinearLayout>
+</LinearLayout>

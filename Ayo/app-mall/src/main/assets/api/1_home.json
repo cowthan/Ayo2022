@@ -1,0 +1,1150 @@
+{
+  "slides": [
+    {
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/15/7B/1080x-/crop/-/ChOOuloVJLSADguzAAMNOHNLcng080.jpg",
+      "scheme": "dongqiudi:///url/https://test1-n.dongqiudi.com/webapp/mall-arsenal.html"
+    },
+    {
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/15/7B/1080x-/crop/-/ChOOuloVJRSATrVEAALp2AOchz0852.jpg",
+      "scheme": "dongqiudi:///url/https://test1-n.dongqiudi.com/v1/mall-game.html"
+    }
+  ],
+  "service": [
+    {
+      "title": "正品保证",
+      "img_url": "http://test1-img1.dongqiudi.net/fastdfs/M00/00/00/Cgo2gFaTYMeAZJzCAAAJUJPVe-U754.png",
+      "scheme": "dongqiudi:///news/143584"
+    },
+    {
+      "title": "全国包邮",
+      "img_url": "http://test1-img1.dongqiudi.net/fastdfs/M00/00/00/CgqfolaTYPqANG9kAAAJXBY5fjQ818.png",
+      "scheme": "dongqiudi:///news/143584"
+    },
+    {
+      "title": "无忧售后",
+      "img_url": "http://test1-img1.dongqiudi.net/fastdfs/M00/00/00/Cgo2gFaTYRGAIZsWAAAJ1MLFSoY431.png",
+      "scheme": "dongqiudi:///news/143584"
+    }
+  ],
+  "categories": [
+    {
+      "title": "球衣",
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/00/16/ChOOulf_Ai-ARGpCAAASeETc9vw010.png",
+      "scheme": "dongqiudi:///mall/category?type_id=2&category_id=10&tag_id=0"
+    },
+    {
+      "title": "运动休闲a",
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/13/39/ChOOulnyst-AJSgRAADnNsqALAU89.jpeg",
+      "scheme": "dongqiudi:///mall/category?type_id=7&category_id=61&tag_id=0"
+    },
+    {
+      "title": "球鞋",
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/00/16/ChOOulf_AieAO72eAAAXl5nRUhg576.png",
+      "scheme": "dongqiudi:///mall/category?type_id=1&category_id=4&tag_id=0"
+    },
+    {
+      "title": "配件",
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/00/16/ChOOulf_AjeAEJS1AAAYXCekRfQ457.png",
+      "scheme": "dongqiudi:///mall/category?type_id=3&category_id=15&tag_id=0"
+    },
+    {
+      "title": "球票",
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/10/1C/ChOOulmBSyiAe2UoABhu4G7wIGQ197.png",
+      "scheme": "dongqiudi:///mall/category?type_id=27&category_id=48&tag_id=0"
+    },
+    {
+      "title": "足球",
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/10/0D/ChOOulmAYNmALMC7AAA53FtvKhE815.png",
+      "scheme": "dongqiudi:///mall/category?type_id=3&category_id=19&tag_id=0"
+    },
+    {
+      "title": "梅西专属",
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/10/1C/ChOOulmBTPiAZCDmAAI-vUCwCLg973.jpg",
+      "scheme": "dongqiudi:///mall/category?type_id=1&category_id=8&tag_id=38"
+    },
+    {
+      "title": "新品推荐",
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/00/13/ChOOulf4mM-AeBNjAAByylD-kvs467.jpg",
+      "scheme": "dongqiudi:///mall/tag_products?source_type=newProduct"
+    },
+    {
+      "title": "体育赛事",
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/0D/5A/ChOOulklN--AUbydAAEoL1Jw3jk658.jpg",
+      "scheme": "dongqiudi:///mall/category?type_id=60&category_id=61&tag_id=0"
+    },
+    {
+      "title": "全部分类",
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/00/13/ChOOulf4oTqAHMxMAAAF7cG2kag315.png",
+      "scheme": "dongqiudi:///mall/all_categorys"
+    }
+  ],
+  "modules": [
+    {
+      "type": 9,
+      "name": "新卡片的",
+      "scheme": "dongqiudi:///mall/page/41",
+      "order": 1,
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/15/7B/1080x-/crop/-/ChOOuloVJOSAHP52AAJdLc1M0yc843.jpg",
+      "data": [
+        {
+          "product_code": "dxn9802",
+          "type_id": "2",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/14/F2/510x-/crop/-/ChOOuloPrTyAHUaSAAEOCeR61F814.jpeg",
+          "title": "dxn9802",
+          "warehouse_id": "34",
+          "sale_price": "10.01",
+          "list_price": "30",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 1,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "0",
+          "tags": [],
+          "label": "",
+          "labels": [
+            {
+              "type": "image",
+              "value": "http://test1-img1.dongqiudi.net/www/M00/00/13/ChOOulfstdyAABSeAAANHQo3fRI038.png",
+              "layer": 1
+            },
+            {
+              "type": "text",
+              "value": "梅西同款",
+              "layer": 2
+            }
+          ],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxn9801",
+          "type_id": "2",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/14/F2/510x-/crop/-/ChOOuloPrUKAGs_3AAE2qGLtRaQ19.jpeg",
+          "title": "dxn9801",
+          "warehouse_id": "3",
+          "sale_price": "1",
+          "list_price": "1",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 6,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "0",
+          "tags": [],
+          "label": "",
+          "labels": [],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "lwy1027",
+          "type_id": "2",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/14/F2/510x-/crop/-/ChOOuloPrUmAdOO5AAFgpOnK84803.jpeg",
+          "title": "lwy1027",
+          "warehouse_id": "1",
+          "sale_price": "150",
+          "list_price": "200",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 11,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "0",
+          "tags": [
+            {
+              "type": "image",
+              "value": "http://img.dongqiudi.com/data/pic/2016.png"
+            }
+          ],
+          "label": "",
+          "labels": [],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        }
+      ]
+    },
+    {
+      "type": 5,
+      "name": "旧的卡片",
+      "scheme": "dongqiudi:///mall/page/41",
+      "order": 2,
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/14/F2/1080x-/crop/-/ChOOuloPsRWAL6FOAAFc6Du2zsY880.png",
+      "data": [
+        {
+          "product_code": "dxn99xx",
+          "type_id": "2",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/14/F2/510x-/crop/-/ChOOuloPsUSAXK3pAABiqK0Ixpk663.png",
+          "title": "dxn99xx",
+          "warehouse_id": "34",
+          "sale_price": "66",
+          "list_price": "99",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 9,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "0",
+          "tags": [],
+          "label": "",
+          "labels": [],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxn9915",
+          "type_id": "1",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/14/F2/510x-/crop/-/ChOOuloPsUuAUqcPAACa2npzVIA628.png",
+          "title": "dxn9915",
+          "warehouse_id": "1",
+          "sale_price": "96.73",
+          "list_price": "352",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 70,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "1084",
+          "tags": [],
+          "label": "",
+          "labels": [
+            {
+              "type": "image",
+              "layer": 1,
+              "value": "http://test1-img1.dongqiudi.net/www/M00/15/8A/ChOOuloudauAbZZZAACszfHGfvM163.png"
+            }
+          ],
+          "limited": [],
+          "promote": {
+            "promote": "start",
+            "title": "测试",
+            "price": "96.73",
+            "bg_url": "https://test1-mall.dongqiudi.com/static/img/dacu.png"
+          },
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "PLGA123564",
+          "type_id": "1",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/14/F2/510x-/crop/-/ChOOuloPsVOAZuUiAABDD8FDXNU579.png",
+          "title": "PLGA123564",
+          "warehouse_id": "1",
+          "sale_price": "4.45",
+          "list_price": "2",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 4,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "205",
+          "tags": [],
+          "label": "",
+          "labels": [],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        }
+      ]
+    },
+    {
+      "type": 10,
+      "name": "大图n",
+      "scheme": "",
+      "order": 3,
+      "data": [
+        {
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/15/7B/1080x-/crop/-/ChOOuloVJPeAIq6bAAM4gyKUvHc234.jpg",
+          "scheme": "dongqiudi:///mall/page/41",
+          "type": 0
+        },
+        {
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/15/7B/1080x-/crop/-/ChOOuloVJPyAJeMUAAISp5RYaAY642.jpg",
+          "scheme": "dongqiudi:///mall/page/40",
+          "type": 0
+        },
+        {
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/15/7B/1080x-/crop/-/ChOOuloVJQOADA2CAALm1upjVLI434.jpg",
+          "scheme": "dongqiudi:///mall/page/35",
+          "type": 0
+        }
+      ]
+    },
+    {
+      "type": 7,
+      "name": "首页优惠券",
+      "scheme": "",
+      "order": 4,
+      "coupon": [
+        {
+          "id": 543,
+          "amount": "11",
+          "scope": "测试相对优惠券1",
+          "condition": "无条件使用",
+          "status": 1,
+          "status_str": "立即领取"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "name": "测改价2\bN",
+      "scheme": "dongqiudi:///url/https://n.dongqiudi.com/webapp/mall-year-2017.html",
+      "order": 5,
+      "data": [
+        {
+          "product_code": "dxn0801",
+          "type_id": "3",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/13/47/510x-/crop/-/ChOOuln24riALeiFAAEOCeR61F812.jpeg",
+          "title": "dxn0801",
+          "warehouse_id": "3",
+          "sale_price": "9.37",
+          "list_price": "30",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": false,
+          "sales": 7,
+          "status": {
+            "key": "ordering",
+            "title": "补货中",
+            "color": "#bababa"
+          },
+          "stock": "0",
+          "tags": [],
+          "label": "",
+          "labels": [
+            {
+              "type": "image",
+              "value": "http://test1-img1.dongqiudi.net/www/M00/00/13/ChOOulfstdyAABSeAAANHQo3fRI038.png",
+              "layer": 1
+            },
+            {
+              "type": "text",
+              "value": "梅西同款",
+              "layer": 2
+            }
+          ],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxn99xx",
+          "type_id": "2",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/13/47/510x-/crop/-/ChOOuln24uyAd4FoAAE2qGLtRaQ67.jpeg",
+          "title": "dxn99xx",
+          "warehouse_id": "34",
+          "sale_price": "66",
+          "list_price": "99",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 9,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "0",
+          "tags": [],
+          "label": "",
+          "labels": [],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxn0938",
+          "type_id": "1",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/13/48/510x-/crop/-/ChOOuln4QH-ATigEAACMJoFoO8E092.jpg",
+          "title": "dxn0938",
+          "warehouse_id": "1",
+          "sale_price": "0.01",
+          "list_price": "299.33",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 84,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "233",
+          "tags": [],
+          "label": "",
+          "labels": [],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxn9912",
+          "type_id": "1",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/13/48/510x-/crop/-/ChOOuln4QJeAVXWXAACMJoFoO8E980.jpg",
+          "title": "dxn9912",
+          "warehouse_id": "1",
+          "sale_price": "88",
+          "list_price": "0.98",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 9,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "538",
+          "tags": [],
+          "label": "",
+          "labels": [],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxn9915",
+          "type_id": "1",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/13/4A/510x-/crop/-/ChOOuln5Z82AQOzVAAEOCeR61F829.jpeg",
+          "title": "dxn9915",
+          "warehouse_id": "1",
+          "sale_price": "96.73",
+          "list_price": "352",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 70,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "1084",
+          "tags": [],
+          "label": "",
+          "labels": [
+            {
+              "type": "image",
+              "layer": 1,
+              "value": "http://test1-img1.dongqiudi.net/www/M00/15/8A/ChOOuloudauAbZZZAACszfHGfvM163.png"
+            }
+          ],
+          "limited": [],
+          "promote": {
+            "promote": "start",
+            "title": "测试",
+            "price": "96.73",
+            "bg_url": "https://test1-mall.dongqiudi.com/static/img/dacu.png"
+          },
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxn1259",
+          "type_id": "1",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/13/4A/510x-/crop/-/ChOOuln5Z8eAS9sBAAEz4NWPEuA61.jpeg",
+          "title": "dxn1259",
+          "warehouse_id": "1",
+          "sale_price": "3.52",
+          "list_price": "33",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 7,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "29",
+          "tags": [],
+          "label": "",
+          "labels": [
+            {
+              "type": "image",
+              "layer": 1,
+              "value": "http://test1-img1.dongqiudi.net/www/M00/15/8A/ChOOuloudauAa0TMAACmFwZQY9I423.png"
+            }
+          ],
+          "limited": [],
+          "promote": {
+            "promote": "start",
+            "title": "测试",
+            "price": "3.52",
+            "bg_url": "https://test1-mall.dongqiudi.com/static/img/dacu.png"
+          },
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxn0935",
+          "type_id": "1",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/13/4A/510x-/crop/-/ChOOuln5Z76AFnKZAACa2npzVIA767.png",
+          "title": "dxn0935",
+          "warehouse_id": "1",
+          "sale_price": "0.01",
+          "list_price": "299.99",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 40,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "1391",
+          "tags": [],
+          "label": "",
+          "labels": [
+            {
+              "type": "image",
+              "layer": 1,
+              "value": ""
+            }
+          ],
+          "limited": [],
+          "promote": {
+            "promote": "start",
+            "title": "测试",
+            "price": "0.01",
+            "bg_url": "https://test1-mall.dongqiudi.com/static/img/dacu.png"
+          },
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxn0929",
+          "type_id": "1",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/13/4A/510x-/crop/-/ChOOuln5Z7SASBMaAACa2npzVIA026.png",
+          "title": "dxn0929",
+          "warehouse_id": "5",
+          "sale_price": "1.64",
+          "list_price": "3",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 11,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "11111",
+          "tags": [],
+          "label": "",
+          "labels": [
+            {
+              "type": "image",
+              "layer": 1,
+              "value": "http://test1-img1.dongqiudi.net/www/M00/15/8A/ChOOuloudauAK5j0AACqohqw7Os490.png"
+            }
+          ],
+          "limited": [],
+          "promote": {
+            "promote": "start",
+            "title": "测试",
+            "price": "1.64",
+            "bg_url": "https://test1-mall.dongqiudi.com/static/img/dacu.png"
+          },
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "name": "各类目",
+      "scheme": "dongqiudi:///mall/page/35",
+      "order": 6,
+      "data": [
+        {
+          "product_code": "dxn0904",
+          "type_id": "3",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/FE/510x-/crop/-/ChOOulkaygSATLFhAABJPI7FHSE593.png",
+          "title": "dxn0904",
+          "warehouse_id": "1",
+          "sale_price": "3999.89",
+          "list_price": "222",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 9,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "554",
+          "tags": [],
+          "label": "",
+          "labels": [
+            {
+              "type": "image",
+              "layer": 1,
+              "value": ""
+            }
+          ],
+          "limited": [],
+          "promote": {
+            "promote": "start",
+            "title": "测试",
+            "price": "3999.89",
+            "bg_url": "https://test1-mall.dongqiudi.com/static/img/dacu.png"
+          },
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxn0801",
+          "type_id": "3",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/13/47/510x-/crop/-/ChOOuln2y8SADVBiAAEOCeR61F842.jpeg",
+          "title": "7371401",
+          "warehouse_id": "3",
+          "sale_price": "9.37",
+          "list_price": "30",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": false,
+          "sales": 7,
+          "status": {
+            "key": "ordering",
+            "title": "补货中",
+            "color": "#bababa"
+          },
+          "stock": "0",
+          "tags": [],
+          "label": "",
+          "labels": [
+            {
+              "type": "image",
+              "value": "http://test1-img1.dongqiudi.net/www/M00/00/13/ChOOulfstdyAABSeAAANHQo3fRI038.png",
+              "layer": 1
+            },
+            {
+              "type": "text",
+              "value": "梅西同款",
+              "layer": 2
+            }
+          ],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxn111111",
+          "type_id": "1",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/FE/510x-/crop/-/ChOOulkayjeALBidAAFgpOnK84825.jpeg",
+          "title": "球鞋",
+          "warehouse_id": "5",
+          "sale_price": "11",
+          "list_price": "44",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 87,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "107",
+          "tags": [
+            {
+              "type": "text",
+              "value": "SG"
+            },
+            {
+              "type": "text",
+              "value": "钢钉"
+            }
+          ],
+          "label": "罗伊斯同款",
+          "labels": [
+            {
+              "type": "image",
+              "value": "http://test1-img1.dongqiudi.net/www/M00/00/13/ChOOulfstdyAABSeAAANHQo3fRI038.png",
+              "layer": 1
+            },
+            {
+              "type": "text",
+              "value": "梅西同款",
+              "layer": 2
+            }
+          ],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "905513-496",
+          "type_id": "1",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/13/09/510x-/crop/-/ChOOulnrC3CAeZjZAACK6wQoEiA174.png",
+          "title": "905513-496",
+          "warehouse_id": "1",
+          "sale_price": "90",
+          "list_price": "899",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 6,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "88",
+          "tags": [
+            {
+              "type": "text",
+              "value": "短钉"
+            }
+          ],
+          "label": "",
+          "labels": [],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxn043",
+          "type_id": "3",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/FE/510x-/crop/-/ChOOulkayoSAcCMgAAEOCeR61F886.jpeg",
+          "title": "配件",
+          "warehouse_id": "1",
+          "sale_price": "0.01",
+          "list_price": "33",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 88,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "10402",
+          "tags": [],
+          "label": "",
+          "labels": [
+            {
+              "type": "image",
+              "value": "http://test1-img1.dongqiudi.net/www/M00/00/13/ChOOulfstdyAABSeAAANHQo3fRI038.png",
+              "layer": 1
+            },
+            {
+              "type": "text",
+              "value": "梅西同款",
+              "layer": 2
+            }
+          ],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxnqp009",
+          "type_id": "4",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/FF/510x-/crop/-/ChOOulkayqaAVpxjAAE2qGLtRaQ94.jpeg",
+          "title": "球票",
+          "warehouse_id": "9",
+          "sale_price": "0.01",
+          "list_price": "33.58",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 6,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "1099",
+          "tags": [],
+          "label": "",
+          "labels": [],
+          "limited": [],
+          "max_price": "0.01",
+          "min_price": "0.01",
+          "type": 1
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "name": "2*n",
+      "scheme": "dongqiudi:///mall/page/33",
+      "order": 7,
+      "data": [
+        {
+          "type": 2,
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/BD/1080x-/crop/-/ChOOulkSk1iAE9kSAAFdYXyIf-U53.jpeg",
+          "scheme": "dongqiudi:///mall/page/32"
+        },
+        {
+          "type": 2,
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/BD/1080x-/crop/-/ChOOulkSk16AaUBuAAE2qGLtRaQ40.jpeg",
+          "scheme": "dongqiudi:///mall/page/32"
+        }
+      ]
+    },
+    {
+      "type": 4,
+      "name": "1+2",
+      "scheme": "dongqiudi:///mall/page/39",
+      "order": 8,
+      "data": [
+        {
+          "type": 2,
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/BD/1080x-/crop/-/ChOOulkSh3yAOUxjAAFgpOnK84856.jpeg",
+          "scheme": "http://www.baidu.com"
+        },
+        {
+          "type": 2,
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/BD/1080x-/crop/-/ChOOulkSh4KAYpDgAAEz4NWPEuA65.jpeg",
+          "scheme": "dongqiudi:///mall/product/dxn044"
+        },
+        {
+          "type": 2,
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/BD/1080x-/crop/-/ChOOulkSh2uAAw0CAABDD8FDXNU780.png",
+          "scheme": "http://www.taobao.com"
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "name": "多专题",
+      "scheme": "",
+      "order": 9,
+      "data": [
+        {
+          "title": "专题1标题",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/AA/1080x-/crop/-/ChOOulkQKKCAPR1hAAFc6Du2zsY459.png",
+          "scheme": "dongqiudi:///mall/page/32",
+          "type": 0
+        },
+        {
+          "title": "专题2标题",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/AA/1080x-/crop/-/ChOOulkQDvOAdJxcAABDD8FDXNU692.png",
+          "scheme": "dongqiudi:///mall/page/32",
+          "type": 0
+        }
+      ]
+    },
+    {
+      "type": 2,
+      "name": "sophia落地页",
+      "scheme": "dongqiudi:///mall/page/40",
+      "order": 10,
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/13/17/1080x-/crop/-/ChOOulntkEWAWVcFAACGYXtH0XM792.jpg",
+      "data": []
+    },
+    {
+      "type": 3,
+      "name": "多专题的",
+      "scheme": "",
+      "order": 11,
+      "data": [
+        {
+          "title": "专题1",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/12/12/1080x-/crop/-/ChOOulnCIRCAP6MrAACMJoFoO8E389.jpg",
+          "scheme": "dongqiudi:///mall/index",
+          "type": 0
+        },
+        {
+          "title": "专题2",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/12/12/1080x-/crop/-/ChOOulnCISGALeUAAACMJoFoO8E812.jpg",
+          "scheme": "dongqiudi:///mall/index",
+          "type": 0
+        }
+      ]
+    },
+    {
+      "type": 2,
+      "name": "多专题大图",
+      "scheme": "dongqiudi:///dongqiudi:///mall/category?type_id=3&category_id=19&tag_id=0 ",
+      "order": 12,
+      "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/AA/1080x-/crop/-/ChOOulkQDr-AbvzZAABDD8FDXNU317.png",
+      "data": []
+    },
+    {
+      "type": 1,
+      "name": "新增2n825",
+      "scheme": "dongqiudi:///mall/tag_products?source_type=newProduct",
+      "order": 13,
+      "data": [
+        {
+          "product_code": "dxn056",
+          "type_id": "2",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/11/78/510x-/crop/-/ChOOulmf6g6AHGkHAACMJoFoO8E450.jpg",
+          "title": "活动后的还得",
+          "warehouse_id": "3",
+          "sale_price": "27",
+          "list_price": "22",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 238,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "439",
+          "tags": [
+            {
+              "type": "image",
+              "value": "http://img.dongqiudi.com/data/pic/660.png"
+            }
+          ],
+          "label": "",
+          "labels": [
+            {
+              "type": "image",
+              "value": "http://test1-img1.dongqiudi.net/www/M00/00/13/ChOOulfstdyAABSeAAANHQo3fRI038.png",
+              "layer": 1
+            },
+            {
+              "type": "text",
+              "value": "梅西同款",
+              "layer": 2
+            }
+          ],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "name": "2n的测试",
+      "scheme": "dongqiudi:///url/https://test1-mall.dongqiudi.com/api/pagemix/36",
+      "order": 14,
+      "data": [
+        {
+          "type": 2,
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/F1/1080x-/crop/-/ChOOulkZJZaAayZMAAAGY-r_j7A638.png",
+          "scheme": "http://www.baidu.com"
+        },
+        {
+          "type": 2,
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/10/E7/1080x-/crop/-/ChOOulmRnNeAWLAqAACMJoFoO8E798.jpg",
+          "scheme": "dongqiudi:///mall/category?type_id=2&category_id=12&tag_id=0"
+        },
+        {
+          "type": 2,
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/AA/1080x-/crop/-/ChOOulkQDfuARr-IAADXQuMPjlU997.png",
+          "scheme": "dongqiudi:///mall/category?type_id=2&category_id=12&tag_id=0"
+        },
+        {
+          "type": 2,
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/10/E7/1080x-/crop/-/ChOOulmRnOyAMgVVAACMJoFoO8E583.jpg",
+          "scheme": "dongqiudi:///url/https://test1-mall.dongqiudi.com/api/pagemix/36"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "name": "新增加模块",
+      "scheme": "dongqiudi:///mall/category?type_id=2&category_id=11&tag_id=0",
+      "order": 15,
+      "data": [
+        {
+          "type": 2,
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/10/E8/1080x-/crop/-/ChOOulmRn2uACya-AACMJoFoO8E342.jpg",
+          "scheme": "dongqiudi:///mall/category?type_id=2&category_id=12&tag_id=0"
+        },
+        {
+          "type": 2,
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/10/E8/1080x-/crop/-/ChOOulmRn3yAXX7sAAI-vUCwCLg315.jpg",
+          "scheme": "dongqiudi:///mall/category?type_id=2&category_id=11&tag_id=0"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "name": "2n2n2n2n2n",
+      "scheme": "dongqiudi:///mall/product/dxn044",
+      "order": 16,
+      "data": [
+        {
+          "type": 2,
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/F2/1080x-/crop/-/ChOOulkZWXqAfXoZAAAGY-r_j7A292.png",
+          "scheme": "dongqiudi:///mall/product/dxn041"
+        },
+        {
+          "product_code": "dxn042",
+          "type_id": "3",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/F1/510x-/crop/-/ChOOulkZUs6AKPmlAASGXSYJjlQ928.jpg",
+          "title": "dxn042",
+          "warehouse_id": "1",
+          "sale_price": "0.01",
+          "list_price": "299.99",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 11,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "119",
+          "tags": [],
+          "label": "",
+          "labels": [
+            {
+              "type": "image",
+              "value": "http://test1-img1.dongqiudi.net/www/M00/00/13/ChOOulfste-AZPjlAAAK83C-Ecc087.png",
+              "layer": 1
+            },
+            {
+              "type": "text",
+              "value": "梅西同款",
+              "layer": 2
+            }
+          ],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxn043",
+          "type_id": "3",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/AD/510x-/crop/-/ChOOulkQU8qAICEEAAQXE1QgSHE210.PNG",
+          "title": "dxn043",
+          "warehouse_id": "1",
+          "sale_price": "0.01",
+          "list_price": "33",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 88,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "10402",
+          "tags": [],
+          "label": "",
+          "labels": [
+            {
+              "type": "image",
+              "value": "http://test1-img1.dongqiudi.net/www/M00/00/13/ChOOulfstdyAABSeAAANHQo3fRI038.png",
+              "layer": 1
+            },
+            {
+              "type": "text",
+              "value": "梅西同款",
+              "layer": 2
+            }
+          ],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "product_code": "dxn044",
+          "type_id": "2",
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/AD/510x-/crop/-/ChOOulkQU6mAQ4biAACMAvlO13c067.jpg",
+          "title": "dxn044",
+          "warehouse_id": "1",
+          "sale_price": "11",
+          "list_price": "100",
+          "postage": "0",
+          "is_haitao": false,
+          "is_buyable": true,
+          "sales": 40016,
+          "status": {
+            "key": "in_stock",
+            "title": "售卖中",
+            "color": ""
+          },
+          "stock": "404",
+          "tags": [
+            {
+              "type": "image",
+              "value": "http://img.dongqiudi.com/data/pic/2016.png"
+            }
+          ],
+          "label": "",
+          "labels": [
+            {
+              "type": "text",
+              "value": "梅西同款",
+              "layer": 2
+            }
+          ],
+          "limited": [],
+          "max_price": 0,
+          "min_price": 0,
+          "type": 1
+        },
+        {
+          "type": 2,
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/F2/1080x-/crop/-/ChOOulkZZJaAKf_CAAAGY-r_j7A237.png",
+          "scheme": "dongqiudi:///mall/product/dxn042"
+        },
+        {
+          "type": 2,
+          "img_url": "http://test1-img1.dongqiudi.net/www/M00/0C/F2/1080x-/crop/-/ChOOulkZZI2APD_WAAAGY-r_j7A127.png",
+          "scheme": "dongqiudi:///mall/product/dxn041"
+        }
+      ]
+    }
+  ],
+  "auto_request_recommend": 1
+}

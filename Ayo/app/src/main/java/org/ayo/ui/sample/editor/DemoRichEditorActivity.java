@@ -6,8 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import org.ayo.JsonUtils;
 import org.ayo.core.Lang;
-import org.ayo.http.utils.JsonUtils;
 import org.ayo.imagepicker.MyImagePicker;
 import org.ayo.imagepicker.PhotoListActivity;
 import org.ayo.imagepicker.ThumbModel;

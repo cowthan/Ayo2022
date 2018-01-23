@@ -5,7 +5,7 @@ import org.ayo.editor.emoj.db.EmojiRepo;
 import org.ayo.editor.emoj.model.EmojiCategoryModel;
 import org.ayo.editor.emoj.model.EmojiModel;
 import org.ayo.file.IO;
-import org.ayo.http.utils.JsonUtils;
+import com.app.core.utils.JsonUtils;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,9 +1,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-    package="cowthan.ayocore">
+    package="org.ayo.core">
 
-    <application android:allowBackup="true" android:label="@string/app_name"
+    <application android:allowBackup="true"
         android:supportsRtl="true">
+
+        <receiver android:name="org.ayo.receiver.GlobalReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="org.ayo.receiver.global"/>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="org.ayo.service.GlobalIntentService"
+            android:enabled="true" />
 
     </application>
 

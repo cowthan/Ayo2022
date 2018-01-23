@@ -3,6 +3,7 @@ package org.ayo.ui.sample.nano;
 
 import org.ayo.core.Lang;
 import org.ayo.core.JsonTools;
+import org.ayo.notify.toaster.Toaster;
 import org.ayo.ui.sample.nano.tools.ScreenLockManager;
 
 import java.util.Map;
@@ -59,8 +60,10 @@ public class FakeHttpdController {
                 }else{
                     if(status.equals("on")){
                         ScreenLockManager.getDefault().turnScreenOn();
+                        Toaster.toastShort("on");
                     }else if(status.equals("off")){
                         ScreenLockManager.getDefault().unlockScreen();
+                        Toaster.toastShort("off");
                     }else{
                         return new FakeHttpd.FakeResponse(200, "text/json", "status参数的值无效：" + status);
                     }

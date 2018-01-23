@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xlistview_footer_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lib_color_bg2"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/xlistview_footer_hint_textview"
+        style="@style/Style_TextViewXListViewFoot"
+        android:layout_centerInParent="true"
+        android:text="@string/xlistview_footer_hint_normal" />
+
+    <com.app.core.view.ProgressImageView
+        android:id="@+id/xlistview_footer_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/xlistview_footer_hint_textview"
+        android:src="@drawable/loading_footer" />
+
+</RelativeLayout>

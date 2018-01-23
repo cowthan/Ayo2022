@@ -1,2 +1,2 @@
-include ':app', ':ayo-ui-list', ':ayo-ui-view', ':ayo-ui-notify', ':ayo-ui-template', ':ayo-ui-view-extra', ':hover', ':third-party-sdk', ':hover-wrapper', ':app-talker', ':ayocore'
+include ':app', ':app-talker', ':ayocore', ':AppCore', ':ayokit', ':ayo-menu-lib', ':ayo-extra', ':ayo-ui-view-extra', ':ayo-ui-view', ':third-party-sdk', ':sample-core', ':sample-anim', ':ayo-animate', ':ayo-robot', ':ayo-colorpicker', ':sample-canvas', ':app-account', ':app-mall'
 

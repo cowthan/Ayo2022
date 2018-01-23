@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="mall_listview_divider">#DDDDDD</color>
+    <color name="mall_red_e7">#e70000</color>
+    <color name="mall_pressed_color_bg">#19000000</color>
+    <color name="mall_search_bg">#f5f5f5</color>
+    <color name="mall_font_gray">#999999</color>
+    <color name="mall_font_gray_hint">#cccccc</color>
+
+    <color name="shoppingcar_sellet">#ff6529</color>
+    <color name="shoppingcar_sellet_p">#cc5121</color>
+
+    <color name="shoppingcar_delete">#f05748</color>
+    <color name="shoppingcar_delete_p">#ca3628</color>
+    <color name="bg_custom_chat">#fffaf0</color>
+    <color name="final_comment_text_color_normal">@color/lib_color_font2</color>
+    <color name="final_comment_text_color_pressed">#ff8a00</color>
+    <color name="list_selector_selected">#ffdddddd</color>
+    <color name="list_selector_normal">#ffF5F5F5</color>
+    <color name="bg_mall_category_selected">#f7f7f7</color>
+    <color name="mall_ddd">#ddd</color>
+    <color name="mall_invoice_item_info_seperator_font">#e9e9e9</color>
+    <color name="mall_invoice_price_in_voice">#ea1600</color>
+    <color name="mall_invoice_price_in_order">#ea1600</color>
+    <color name="mall_coupon">#df5547</color>
+    <color name="mall_coupon_disable">#999999</color>
+    <color name="mall_coupon_bg_disable">#bbbbbb</color>
+    <color name="re_comment">#e5e5e5</color>
+
+
+    <!--guojun add about mall -->
+    <color name="price_now">#ea1600</color>
+    <color name="price_old">#bbbbbb</color>
+    <color name="user_btn_text_color">#333333</color>
+    <color name="image_load_bg">#e9e9e9</color>
+    <color name="parameter_no_choose">#cfcfcf</color>
+
+
+    <!-- about order -->
+    <color name="order_item_logistics_bg">#f9f9f9</color>
+    <color name="order_item_logistics_time">#ea1600</color>
+    <color name="order_btn_orange">#ff6529</color>
+
+    <!--cart_bg1-->
+    <color name="goods_name">#333</color>
+    <color name="goods_size">#999</color>
+    <color name="order_edit_line">#8a8a8a</color>
+    <!--确认订单-->
+    <color name="confirmorder_text">#333</color>
+    <color name="confirmorder_pay_way">#999</color>
+    <!--收货地址-->
+    <color name="address_key">#999</color>
+    <color name="address_value">#333</color>
+
+
+
+    <color name="ddd">#ddd</color>
+
+    <color name="share_comment_bg">#fffae8</color>
+    <!-- 优惠券相关 -->
+    <color name="coupon_item_red_bg">#fb5e5e</color>
+    <color name="coupon_item_gray_bg">#cccccc</color>
+
+    <color name="share_item_name">#999</color>
+    <!--<color name="video_control">#b3000000</color>-->
+    <color name="video_control">#33000000</color>
+    <color name="threadlist_banner">#333</color>
+
+
+    <color name="primary">#16ac3a</color>
+    <color name="primary_dark">#16ac3a</color>
+    <!--<color name="title1">#16ac3a</color>-->
+    <!--<color name="title1">#ff128a2e</color>-->
+    <color name="subscribe_item_selected_stroke">@color/title</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+
+
+
+    <color name="pay_result_text">#999</color>
+    <color name="pay_result_myorder">#16ac3a</color>
+    <color name="address_idcard">#555555</color>
+    <color name="goods_price">#ea1600</color>
+    <color name="payresult_myorder">#e9e9e9</color>
+    <color name="payresult_mall">#128a2e</color>
+
+    <color name="stand_dark_font_color">#555555</color>
+    <color name="user_info_name">#555555</color>
+    <color name="user_info_message">#555555</color>
+    <color name="user_info_text_color">#898989</color>
+    <color name="wheel_text">#333333</color>
+    <color name="dialog_black">#333333</color>
+
+    <color name="player_remark_red">#f32613</color>
+    <color name="player_remark_orange">#ff7d04</color>
+    <color name="player_remark_yellow">#fdc631</color>
+    <color name="player_remark_green">#9fd993</color>
+    <color name="player_remark_grey">#888888</color>
+    <color name="yellow_coupon">#ffeac0</color>
+    <color name="yellow_sec_kill">#ffe9c8</color>
+
+    <color name="yellow_sec_kill_before_text_color">#f32613</color>
+    <color name="yellow_sec_kill_running_text_color">#ff8303</color>
+
+    <color name="bg_sec_running_count_down">#ff8303</color>
+    <color name="bg_sec_pre_count_down">#ff3536</color>
+
+    <color name="bg_sec_running_banner">#ffe9c8</color>
+    <color name="bg_sec_pre_banner">#ffe7ee</color>
+
+
+    <!--theme color-->
+    <color name="themeGray">#DEDEDE</color>
+    <!--basic color-->
+    <color name="mainBlack">#242828</color>
+    <color name="mainBlack5B">#5b5b5b</color>
+    <color name="mainRed">#ff3955</color>
+    <color name="mainBlue">#4277fb</color>
+    <color name="mainWhite">#ffffff</color>
+    <color name="mainGrayF8">#f8f8f8</color>
+    <color name="mainGrayF0">#f0f0f0</color>
+    <color name="mainGrayC6">#c6c6c6</color>
+    <color name="mainGray88">#888888</color>
+
+    <!--font color-->
+    <color name="fontGray88">#888888</color>
+    <color name="fontGrayC6">#c6c6c6</color>
+    <color name="fontBlack">#242828</color>
+    <color name="fontRed">#ff3955</color>
+
+
+    <!---->
+    <color name="colorRed">#ff0112</color>
+    <color name="colorGray">#a4a2a2</color>
+    <color name="colorGreen">#05f449</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+</resources>

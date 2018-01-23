@@ -75,13 +75,4 @@ dependencies {
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.jakewharton:butterknife:7.0.1'
 
-    compile(name: 'ayo-eventbus', ext: 'aar')
-    compile(name: 'ayo-anim', ext: 'aar')
-
-    compile project(':ayocore')
-
-    compile project(':ayo-ui-list')
-    compile project(':ayo-ui-notify')
-    compile project(':ayo-ui-template')
-    compile project(':ayo-ui-view')
 }

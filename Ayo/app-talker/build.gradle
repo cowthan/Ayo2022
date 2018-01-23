@@ -6,7 +6,7 @@ configer.load(new FileInputStream(file("../config.properties")))
 
 android {
     compileSdkVersion Integer.valueOf(configer['compileSdkVersion'])
-    buildToolsVersion configer['buildToolsVersion']
+//    buildToolsVersion configer['buildToolsVersion']
 
     defaultConfig {
 //        applicationId "com.byl.qrobot"
@@ -49,17 +49,7 @@ repositories {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 
-    compile project(':ayocore')
-
-    compile project(':ayo-ui-list')
-    compile project(':ayo-ui-notify')
-    compile project(':ayo-ui-template')
-    compile project(':ayo-ui-view')
-    compile project(':ayo-ui-view-extra')
-    compile(name: 'ayo-menu', ext: 'aar')
-    compile(name: 'ayo-eventbus', ext: 'aar')
-    compile(name: 'ayo-anim', ext: 'aar')
-    compile(name: 'markdown', ext: 'aar')
-    compile(name: 'richtext', ext: 'aar')
+    compile project(':AppCore')
+    compile project(':ayo-extra')
 
 }

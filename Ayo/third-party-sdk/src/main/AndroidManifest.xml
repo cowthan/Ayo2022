@@ -309,7 +309,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
 
-                <data android:scheme="tencent${QQ_ID}"/>
+                <data android:scheme="tencent1104091687"/>
             </intent-filter>
         </activity>
         <activity

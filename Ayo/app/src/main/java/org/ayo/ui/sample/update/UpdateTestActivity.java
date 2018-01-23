@@ -6,7 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import org.ayo.http.utils.JsonUtils;
+import org.ayo.JsonUtils;
 import org.ayo.sample.R;
 import org.ayo.ui.sample.BasePage;
 import org.ayo.update.IUpdateParser;

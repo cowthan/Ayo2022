@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color2"
+    android:orientation="vertical">
+
+    <org.ayo.view.widget.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/titlebar_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selector_audience_confirm"
+            android:text="@string/mall_audience_add_confirm"
+            android:textColor="@color/lib_color_font7"
+            android:textSize="@dimen/lib_font_size3"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_lable_company"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:text="@string/mall_audience_label_name"
+                    android:textColor="@color/lib_color_font4"
+                    android:textSize="@dimen/lib_font_size4" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/mall_audience_hint_name"
+                    android:maxLines="1"
+                    android:textColor="@color/lib_color_font2"
+                    android:textColorHint="@color/mall_font_gray_hint"
+                    android:textSize="@dimen/lib_font_size4" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_lable_order"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:text="@string/mall_audience_label_card"
+                    android:textColor="@color/lib_color_font4"
+                    android:textSize="@dimen/lib_font_size4" />
+
+                <EditText
+                    android:id="@+id/et_card"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/mall_audience_hint_card"
+                    android:maxLines="1"
+                    android:textColor="@color/lib_color_font2"
+                    android:textColorHint="@color/mall_font_gray_hint"
+                    android:textSize="@dimen/lib_font_size4" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

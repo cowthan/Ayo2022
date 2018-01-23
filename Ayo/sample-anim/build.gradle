@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+
+Properties configer = new Properties()
+configer.load(new FileInputStream(file("../config.properties")))
+
+android {
+    compileSdkVersion Integer.valueOf(configer['compileSdkVersion'])
+//    buildToolsVersion configer['buildToolsVersion']
+
+    defaultConfig {
+        applicationId "org.ayo.robot.anim"
+        minSdkVersion Integer.valueOf(configer['minSdkVersion'])
+        targetSdkVersion Integer.valueOf(configer['targetSdkVersion'])
+        versionCode Integer.valueOf(configer['versionCode'])
+        versionName configer['versionName']
+        vectorDrawables.useSupportLibrary = true
+    }
+//    signingConfigs {
+//        release {
+//            keyAlias signConfiger['KEY_ALIAS']
+//            keyPassword signConfiger['KEY_PASSWORD']
+//            storeFile file(signConfiger['KEYSTORE_FILE'])
+//            storePassword signConfiger['KEYSTORE_PASSWORD']
+//        }
+//    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.release
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs = ['src/main/java']
+        }
+    }
+
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+afterEvaluate {
+    tasks.matching {
+        it.name.startsWith('dex')
+    }.each { dx ->
+        if (dx.additionalParameters == null) {
+            dx.additionalParameters = []
+        }
+        dx.additionalParameters += '--multi-dex' // enable multidex
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    compile configer['lib_appcompat']
+    compile configer['lib_recyclerview']
+    compile configer['lib_design']
+
+    compile 'com.jakewharton:butterknife:8.7.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+    compile project(':ayo-animate')
+    compile project(':ayokit')
+    compile project(':ayo-menu-lib')
+}

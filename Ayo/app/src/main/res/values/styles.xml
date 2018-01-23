@@ -1,44 +1,5 @@
 <resources>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-    </style>
-
-    <style name="AppTheme.Splash" parent="AppTheme">
-        <item name="android:windowBackground">@drawable/logo</item>
-    </style>
-
-    <style name="AppTheme.Transparent" parent="AppTheme">
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.Style</item>
-    </style>
-
-    <style name="Animation.Activity.Style" parent="@android:style/Animation.Activity">
-        <item name="android:activityOpenEnterAnimation">@anim/base_slide_in_from_right</item>
-        <item name="android:activityOpenExitAnimation">@anim/base_hold_stand</item>
-        <item name="android:activityCloseEnterAnimation">@anim/base_hold_stand</item>
-        <item name="android:activityCloseExitAnimation">@anim/base_slide_out_to_right</item>
-        <item name="android:taskOpenEnterAnimation">@anim/base_slide_in_from_right</item>
-        <item name="android:taskOpenExitAnimation">@anim/base_hold_stand</item>
-        <item name="android:taskCloseEnterAnimation">@anim/base_hold_stand</item>
-        <item name="android:taskCloseExitAnimation">@anim/base_slide_out_to_right</item>
-        <item name="android:taskToFrontEnterAnimation">@anim/base_slide_in_from_right</item>
-        <item name="android:taskToFrontExitAnimation">@anim/base_hold_stand</item>
-        <item name="android:taskToBackEnterAnimation">@anim/base_hold_stand</item>
-        <item name="android:taskToBackExitAnimation">@anim/base_slide_out_to_right</item>
-    </style>
-
-    <style name="Animation.Activity.Translucent.Style" parent="@android:style/Animation.Translucent">
-        <item name="android:windowEnterAnimation">@anim/base_slide_in_from_right</item>
-        <item name="android:windowExitAnimation">@anim/base_slide_out_to_right</item>
-    </style>
 
 
     <!-- Base application theme. -->
@@ -95,4 +56,29 @@
         <item name="textAllCaps">true</item>
     </style>
 
+
+    <style name="PopupMenuDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/http_popup_menu_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/http_popup_menu_dialog_out</item>
+    </style>
 </resources>

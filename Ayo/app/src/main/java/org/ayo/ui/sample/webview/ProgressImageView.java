@@ -29,7 +29,7 @@ public class ProgressImageView extends ImageView {
 
     @Override
     protected void onFinishInflate() {
-        animation = AnimationUtils.loadAnimation(getContext(), R.anim.progress);
+        animation = AnimationUtils.loadAnimation(getContext(), R.anim.core_progress);
         if (getVisibility() == VISIBLE)
             setAnimation(animation);
         super.onFinishInflate();

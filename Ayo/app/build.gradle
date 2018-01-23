@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'android-apt'
+apply plugin: 'me.tatarka.retrolambda'
 
 
 Properties configer = new Properties()
@@ -7,7 +7,7 @@ configer.load(new FileInputStream(file("../config.properties")))
 
 android {
     compileSdkVersion Integer.valueOf(configer['compileSdkVersion'])
-    buildToolsVersion configer['buildToolsVersion']
+//    buildToolsVersion configer['buildToolsVersion']
 
     defaultConfig {
         applicationId "com.iwomedia.roadbook"
@@ -49,9 +49,10 @@ android {
         ndk {
             abiFilters "armeabi"/*, "armeabi-v7a", "x86", "x86_64", "mips", "mips64", "arm64-v8a"*/
         }
-//        packagingOptions {
+        packagingOptions {
 //            exclude "lib/arm64-v8a/libimagepipeline.so"
-//        }
+            exclude 'META-INF/rxjava.properties'
+        }
     }
 
     signingConfigs {
@@ -68,7 +69,6 @@ android {
             keyPassword "iwolushu"
         }
     }
-
     buildTypes {
         debug {//debug版
             minifyEnabled false //打包时混淆
@@ -99,14 +99,15 @@ android {
         }
     }
 
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 buildscript {
     repositories {
         mavenCentral()
-    }
-    dependencies {
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     }
 }
 
@@ -133,51 +134,35 @@ repositories {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile fileTree(include: ['*.jar'], dir: '../libs')
-    testCompile 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
     compile 'com.android.support:multidex:1.0.1'
-
-
     compile configer['lib_palette']
 
-    compile project(':ayocore')
+    compile project(':app-talker')
+    compile project(':app-account')
+    compile project(':app-mall')
+    compile project(':ayo-extra')
+
+    compile project(':AppCore')
     compile(name: 'ayo-ui-image-picker-release', ext: 'aar')
     compile(name: 'ayo-rich-editor-release', ext: 'aar')
-    compile(name: 'ayo-updater-release', ext: 'aar')
-
-    compile project(':ayo-ui-list')
-    compile project(':ayo-ui-notify')
-    compile project(':ayo-ui-template')
-    compile project(':ayo-ui-view')
-    compile project(':ayo-ui-view-extra')
-
-    compile(name: 'ayo-menu', ext: 'aar')
-    compile(name: 'ayo-eventbus', ext: 'aar')
-    compile(name: 'ayo-anim', ext: 'aar')
     compile(name: 'markdown', ext: 'aar')
     compile(name: 'richtext', ext: 'aar')
-
-    compile 'com.jakewharton:butterknife:8.2.1'
-    apt 'com.jakewharton:butterknife-compiler:8.2.1'
-
-    compile project(':hover')
-    compile project(':hover-wrapper')
-
     compile project(':third-party-sdk')
 
-    compile project(':app-talker')
+    compile 'com.jakewharton:butterknife:8.7.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
 
     compile 'com.evernote:android-job:1.1.10'
-
-    // pinned section recyclerview的demo用到了
-//    compile 'com.github.bumptech.glide:glide:3.7.0'
     compile "com.github.bumptech.glide:glide:3.7.0"
-
     compile 'com.google.code.gson:gson:2.4'
-
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v2.6.1'
-
     compile 'com.googlecode.mp4parser:isoparser:1.0.6'
 
-    compile 'com.shuyu:GSYVideoPlayer:2.0.8'
 
+    compile(deps.rxbus) {
+        exclude group: 'com.jakewharton.timber', module: 'timber'
+    }
+    compile deps.androidasync
+    compile deps.timber
 }

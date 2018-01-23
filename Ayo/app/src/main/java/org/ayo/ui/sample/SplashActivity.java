@@ -9,6 +9,8 @@ import android.view.View;
 import org.ayo.component.MasterActivity;
 import org.ayo.sample.R;
 
+import com2.ayo.webserver.HttpMainActivity;
+
 
 /**
  */
@@ -22,6 +24,10 @@ public class SplashActivity extends MasterActivity {
 
     @Override
     protected void onCreate2(View view, @Nullable Bundle bundle) {
+
+
+
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -29,6 +35,11 @@ public class SplashActivity extends MasterActivity {
                 Intent i = new Intent(getActivity(), MainnActivity.class);
                 startActivity(i);
                 overridePendingTransition(R.anim.base_fade_in, R.anim.base_fade_out);
+
+                i = new Intent(getActivity(), HttpMainActivity.class);
+                startActivity(i);
+                overridePendingTransition(R.anim.base_fade_in, R.anim.base_fade_out);
+
                 finish();
             }
         }, 1500);

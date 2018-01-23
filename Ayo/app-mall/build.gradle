@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+
+
+Properties configer = new Properties()
+configer.load(new FileInputStream(file("../config.properties")))
+
+android {
+    compileSdkVersion Integer.valueOf(configer['compileSdkVersion'])
+//    buildToolsVersion configer['buildToolsVersion']
+
+    defaultConfig {
+//        applicationId "com.byl.qrobot"
+        minSdkVersion Integer.valueOf(configer['minSdkVersion'])
+        targetSdkVersion Integer.valueOf(configer['targetSdkVersion'])
+        versionCode Integer.valueOf(configer['versionCode'])
+        versionName configer['versionName']
+
+//        ndk {
+//            abiFilters "armeabi"/*, "armeabi-v7a", "x86", "x86_64", "mips", "mips64", "arm64-v8a"*/
+//        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs = ['src/main/java']
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs', '../libs'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile project(':AppCore')
+
+
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-4'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.jude:easyrecyclerview:4.4.2'
+    compile 'me.codeboy.android:align-text-view:2.3.1'
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+
+    compile 'com.jakewharton:butterknife:8.7.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
+}

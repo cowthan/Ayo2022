@@ -6,7 +6,7 @@ configer.load(new FileInputStream(file("../config.properties")))
 
 android {
     compileSdkVersion Integer.valueOf(configer['compileSdkVersion'])
-    buildToolsVersion configer['buildToolsVersion']
+//    buildToolsVersion configer['buildToolsVersion']
 
     defaultConfig {
         minSdkVersion Integer.valueOf(configer['minSdkVersion'])

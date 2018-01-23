@@ -46,7 +46,7 @@
                 android:cacheColorHint="@null"
                 android:childDivider="@drawable/child_bg"
                 android:childIndicatorLeft="0dp"
-                android:divider="@color/Grey"
+                android:divider="@color/grey"
                 android:dividerHeight="1dp"
                 android:groupIndicator="@null"
                 android:scrollbarAlwaysDrawHorizontalTrack="false" >

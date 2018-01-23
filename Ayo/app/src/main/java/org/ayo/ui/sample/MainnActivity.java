@@ -1,16 +1,27 @@
 package org.ayo.ui.sample;
 
+import android.app.Activity;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 
+import com.app.core.prompt.Toaster;
+import com.app.core.utils.permission.DialogHelper;
+import com.app.core.utils.permission.PermissionConstants;
+import com.app.core.utils.permission.PermissionUtils;
 import com.ayo.sdk.demo.DemoJobActivity;
 import com.ayo.sdk.sample.DemoThreadManager;
+import com.worse.more.breaker.LoginActivity;
 import com.zebdar.tom.chat.ChatActivity;
 
+import net.yrom.screenrecorder.MainRecorderActivity;
+
+import org.ayo.JsonUtils;
 import org.ayo.editor.CreateThreadActivity;
-import org.ayo.http.utils.JsonUtils;
+import org.ayo.mall.activity.HellMainActivity;
 import org.ayo.sample.R;
 import org.ayo.sample.menu.Leaf;
 import org.ayo.sample.menu.MainPagerActivity;
@@ -20,7 +31,6 @@ import org.ayo.ui.sample.avloding.AVLoadingSampleActivity;
 import org.ayo.ui.sample.db.DemoDbActivity;
 import org.ayo.ui.sample.dialog.ui.SimpleHomeActivity;
 import org.ayo.ui.sample.flow.MyActivity;
-import org.ayo.ui.sample.http.DemoHttpActivity;
 import org.ayo.ui.sample.log.DemoLogReporterActivity;
 import org.ayo.ui.sample.master.DemoAccount;
 import org.ayo.ui.sample.master.DemoPage;
@@ -100,6 +110,9 @@ public class MainnActivity extends MainPagerActivity {
             m1.addMenuItem(menuItem1);
             {
                 menuItem1.addLeaf(new Leaf("智能机器人", "", ChatActivity.class, 1));
+                menuItem1.addLeaf(new Leaf("登录模板", "", LoginActivity.class, 1));
+                menuItem1.addLeaf(new Leaf("商城模板", "", HellMainActivity.class, 1));
+                menuItem1.addLeaf(new Leaf("录屏", "", MainRecorderActivity.class, 1));
                 menuItem1.addLeaf(new Leaf("----TextView系列----", "", null));
                 menuItem1.addLeaf(new Leaf("html标签处理：原生，生成span", "", DemoOldHtmlActivity.class, 1));
                 menuItem1.addLeaf(new Leaf("awesome：span高级使用", "", AwesomeTextViewActivity.class, 1));
@@ -271,7 +284,6 @@ public class MainnActivity extends MainPagerActivity {
                 menuItem4.addLeaf(new Leaf("ThreadManager", "", DemoThreadManager.class));
                 menuItem4.addLeaf(new Leaf("定时任务", "", DemoJobActivity.class, 1));
                 menuItem4.addLeaf(new Leaf("手机端http服务器", "", NanoHttpServerDemo.class));
-                menuItem4.addLeaf(new Leaf("http请求", "", DemoHttpActivity.class, 1));
                 menuItem4.addLeaf(new Leaf("DB", "", DemoDbActivity.class, 1));
                 menuItem4.addLeaf(new Leaf("Social", "", DemoSocialShareActivity.class, 1));
             }
@@ -284,8 +296,60 @@ public class MainnActivity extends MainPagerActivity {
     @Override
     protected void onCreate2(View contentView, @Nullable Bundle savedInstanceState) {
         super.onCreate2(contentView, savedInstanceState);
-        check(true, 234);
+        //check(true, 234);
 
+        PermissionUtils.permission(PermissionConstants.CALENDAR)
+                .rationale(new PermissionUtils.OnRationaleListener() {
+                    @Override
+                    public void rationale(final ShouldRequest shouldRequest) {
+                        Toaster.toastShort("拒绝过了都");
+                        DialogHelper.showRationaleDialog(getActivity(), shouldRequest);
+                    }
+                })
+                .callback(new PermissionUtils.FullCallback() {
+                    @Override
+                    public void onGranted(List<String> permissionsGranted) {
+                        Toaster.toastShort("好");
+                    }
+                    @Override
+                    public void onDenied(List<String> permissionsDeniedForever,
+                                         List<String> permissionsDenied) {
+//                        if (!permissionsDeniedForever.isEmpty()) {
+//                            DialogHelper.showOpenAppSettingDialog(getActivity());
+//                        }
+                        DialogHelper.showOpenAppSettingDialog(getActivity());
+                        Toaster.toastShort("完蛋");
+                    }
+                })
+                .theme(new PermissionUtils.ThemeCallback() {
+                    @Override
+                    public void onActivityCreate(Activity activity) {
+                        setFullScreen(activity);// 设置全屏
+                    }
+                })
+                .request();
+
+//        PermissionHelper.request(this, new PermissionHelper.OnPermissionGrantedListener() {
+//            @Override
+//            public void onPermissionGranted() {
+//                Toaster.toastShort("好");
+//            }
+//        }, new PermissionHelper.OnPermissionDeniedListener() {
+//            @Override
+//            public void onPermissionDenied() {
+//                Toaster.toastShort("完蛋");
+//            }
+//        }, PermissionConstants.STORAGE);
+    }
+
+    /**
+     * 设置屏幕为全屏
+     *
+     * @param activity activity
+     */
+    public static void setFullScreen(@NonNull final Activity activity) {
+        activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN
+                | WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
     }
 
     @Override

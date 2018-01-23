@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NamedSpinner">
+        <attr name="name1111" format="string|reference" />
+        <attr name="textAppearance1111" format="reference" />
+        <attr name="entries1111" format="reference" />
+    </declare-styleable>
+</resources>
