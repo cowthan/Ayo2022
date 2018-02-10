@@ -1,0 +1,2 @@
+include ':ayocore', ':ayoshell', ':ayokit', ':ayo-menu-lib', ':sample-core', ':sample-anim', ':ayo-animate',':ayo-social',':ayo-player', ':ayo-ui-image-picker'
+

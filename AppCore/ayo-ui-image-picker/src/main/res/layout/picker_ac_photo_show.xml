@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/titlebar_layout"
+        layout="@layout/picker_view_titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFAFA"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <org.ayo.imagepicker.FixedWidthTextView
+            android:id="@+id/tv_bottom_complete"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp"
+            android:textSize="14sp"
+            android:background="@drawable/picker_pic_selector_btn3_bg"
+            android:textColor="@drawable/picker_pic_selector_btn3_font"
+            android:text="@string/picker_finish_num" />
+    </RelativeLayout>
+
+    <org.ayo.imagepicker.album.ViewPagerFixed
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
+        android:layout_below="@id/titlebar_layout" />
+</RelativeLayout>

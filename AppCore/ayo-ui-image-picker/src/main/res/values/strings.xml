@@ -1,0 +1,31 @@
+<resources>
+    <string name="picker_pic_image_picker">ayo-ui-image-picker</string>
+    <string name="picker_finish_num">完成(%1$s)</string>
+    <string name="picker_all_pic">所有照片</string>
+    <string name="picker_max_pic">最多选择%1$d张照片</string>
+    <string name="picker_not_supportupload">还不能支持上传</string>
+    <string name="picker_not_supportupload1280">还不能支持上传高度超过1280px的GIF图片</string>
+    <string name="picker_maxsupport_num">只能上传%1$s张图啦</string>
+    <string name="picker_mb_gifpic">MB以上的GIF图片</string>
+    <string name="picker_useless_pic">无效图片</string>
+    <string name="picker_cancel">取消</string>
+    <string name="picker_sd_card_err">当前存储卡不可用</string>
+    <string name="picker_complete">完成</string>
+    <string name="picker_album_count">%1$s图</string>
+    <string name="picker_album_num">(%1$d)</string>
+    <string name="picker_un_know">未知</string>
+    <string name="picker_video_select">选择视频</string>
+    <string name="picker_video_limit_size">不支持大小超过500M的视频</string>
+    <string name="picker_video_limit_length">不支持时长超过5分钟的视频</string>
+    <string name="picker_video_limit_format">只支持mp4格式的视频</string>
+    <string name="picker_player_empty">没有默认播放器</string>
+    <string name="viewer_download">下载</string>
+    <string name="viewer_goback">返回</string>
+    <string name="viewer_save">保存</string>
+    <string name="viewer_parameter_error_retry">参数错误，请重试</string>
+    <string name="viewer_pic_not_ready_to_save">图片未准备好，请稍后再试</string>
+    <string name="viewer_image_url_empty">图片地址错误</string>
+    <string name="viewer_save_pic_error">保存图片异常</string>
+    <string name="viewer_savepic_to">已保存至：</string>
+    <string name="viewer_no_enough_space">手机空间不足，保存图片失败</string>
+</resources>

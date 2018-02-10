@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+Properties configer = new Properties()
+configer.load(new FileInputStream(file("../config.properties")))
+
+android {
+    compileSdkVersion Integer.valueOf(configer['compileSdkVersion'])
+//    buildToolsVersion configer['buildToolsVersion']
+
+    defaultConfig {
+        applicationId "com.org.core.demo"
+        minSdkVersion Integer.valueOf(configer['minSdkVersion'])
+        targetSdkVersion Integer.valueOf(configer['targetSdkVersion'])
+        versionCode 1
+        versionName '1.0.0'
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    android {
+        lintOptions {
+            abortOnError false
+        }
+    }
+    buildToolsVersion '26.0.2'
+}
+
+repositories {
+    flatDir {
+        dirs 'libs', '../libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    compile project(':ayokit')
+    compile project(':ayo-menu-lib')
+    compile 'org.greenrobot:eventbus:3.0.0'
+}
