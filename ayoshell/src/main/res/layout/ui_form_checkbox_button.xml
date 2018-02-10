@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_for_personal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/sel_form_radio"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/cb_personal"
+        android:text=""
+        tools:text="选项"
+        android:textColor="#333"
+        android:textSize="15sp" />
+</LinearLayout>

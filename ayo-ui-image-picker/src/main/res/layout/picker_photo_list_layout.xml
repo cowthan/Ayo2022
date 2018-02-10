@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <include
+        android:id="@+id/titlebar_layout"
+        layout="@layout/picker_view_titlebar" />
+
+    <GridView
+        android:id="@+id/grid_view"
+        style="@style/picker_grid_view_img_alum_item"
+        android:layout_below="@+id/titlebar_layout"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/select_pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar_layout"
+        android:background="#b1000000"
+        android:visibility="gone">
+
+        <ViewStub
+            android:id="@+id/pop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/picker_pop_alums_layout" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
