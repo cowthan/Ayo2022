@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
-import android.widget.Toast;
 
 import org.ayo.core.Lang;
 import org.ayo.http.HttpUserProxy;
@@ -69,7 +68,7 @@ public class AppCore {
 			if (mFrontActivityCount <= 0) {
 				// TODO 处理从后台恢复到前台的逻辑
 				isInBackground = false;
-				Toast.makeText(app, "----进入前台----", Toast.LENGTH_LONG).show();
+//				Toast.makeText(app, "----进入前台----", Toast.LENGTH_LONG).show();
 			}
 
 			if (tmpCount < 0) {
@@ -93,7 +92,7 @@ public class AppCore {
 				if (mFrontActivityCount <= 0) {
 					// TODO 处理从前台进入到后台的逻辑
 					isInBackground = true;
-					Toast.makeText(app, "----进入后台----", Toast.LENGTH_LONG).show();
+//					Toast.makeText(app, "----进入后台----", Toast.LENGTH_LONG).show();
 				}
 			}
 		}
