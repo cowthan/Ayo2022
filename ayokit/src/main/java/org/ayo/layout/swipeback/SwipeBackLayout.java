@@ -1,7 +1,8 @@
 
 package org.ayo.layout.swipeback;
 
-import com.vchuangkou.vck.R;
+
+import org.ayo.kit.R;
 
 import android.app.Activity;
 import android.content.Context;

@@ -31,7 +31,7 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile configer['lib_appcompat']
-    compile project(':ayokit')
+    compile project(':central:ayokit')
 }
 
 
