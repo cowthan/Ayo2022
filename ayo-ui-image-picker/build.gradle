@@ -29,5 +29,5 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'jp.wasabeef:glide-transformations:2.0.2'
 
-    compile project(':ayokit')
+    compile project(':central:ayokit')
 }
