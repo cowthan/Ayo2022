@@ -79,8 +79,8 @@ dependencies {
     compile project(':ayo-robot')
     compile project(':ayo-colorpicker')
 
-    compile project(':ayokit')
-    compile project(':ayo-menu-lib')
+    compile project(':central:ayokit')
+    compile project(':central:ayo-menu-lib')
 
     compile 'com.jakewharton:butterknife:8.7.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'

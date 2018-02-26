@@ -12,7 +12,6 @@ import com.zebdar.tom.PreferencesUtils;
 import org.ayo.AppCore;
 import org.ayo.notify.toaster.Toaster;
 
-import static org.ayo.view.AyoViewLib.context;
 
 /**
  * 语音合成工具类
@@ -21,7 +20,7 @@ import static org.ayo.view.AyoViewLib.context;
 public class SpeechReader {
 
     private SpeechReader(){
-        this.mTts = SpeechSynthesizer.createSynthesizer(context, mTtsInitListener);
+        this.mTts = SpeechSynthesizer.createSynthesizer(AppCore.app(), mTtsInitListener);
         setParamIts();
     }
 

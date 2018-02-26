@@ -4,8 +4,5 @@
     <application
         android:allowBackup="true"
         android:supportsRtl="true">
-        <activity android:name=".activity.HellMainActivity"
-            android:theme="@style/AppTheme"
-            ></activity>
     </application>
 </manifest>

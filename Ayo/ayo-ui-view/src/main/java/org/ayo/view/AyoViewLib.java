@@ -17,7 +17,6 @@ public class AyoViewLib {
 	
 	public static void init(Context context){
 		AyoViewLib.context = context;
-		LocalDisplay.init(context);
 		Display.init(context);
 	}
 

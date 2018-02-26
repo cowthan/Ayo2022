@@ -49,7 +49,7 @@ repositories {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 
-    compile project(':AppCore')
+    compile project(':central:ayoshell')
     compile project(':ayo-extra')
 
 }

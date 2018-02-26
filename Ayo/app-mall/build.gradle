@@ -49,8 +49,7 @@ repositories {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 
-    compile project(':AppCore')
-
+    compile project(':central:ayoshell')
 
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-4'

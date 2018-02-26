@@ -9,7 +9,7 @@ import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.view.View;
 
-import org.ayo.view.Display;
+import org.ayo.core.Lang;
 
 import java.util.List;
 import java.util.Random;
@@ -93,7 +93,7 @@ public class BlackEmpireView extends View {
             //log.i("black", "draw--" + info.str + "--" + info.left + ", " + info.top + "----------" + infos.size());
             //canvas.drawCircle(info.left, info.top, 4, paint);
             // 绘制文本
-            if(info.top <= Display.screenHeight)  {
+            if(info.top <= Lang.screenHeight())  {
                 for(int i = 0; i < info.str.length(); i++){
                     canvas.drawText( info.str.charAt(i) + "", info.left, info.top + (i * 50), textPaint);  //一个字母高50
                 }
@@ -136,7 +136,7 @@ public class BlackEmpireView extends View {
         frameCount++;
         if(frameCount == 3){
             Info info = new Info();
-            info.left = randomInt(0, Display.screenWidth);
+            info.left = randomInt(0, Lang.screenWidth());
             info.top = -300;
             info.str = randomString(randomInt(5, 12));
             infos.add(info);

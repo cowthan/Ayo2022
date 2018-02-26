@@ -5,6 +5,7 @@ ProjArtVideo
 # Built application files
 *.apk
 *.ap_
+central/
 
 # Files for the ART/Dalvik VM
 *.dex

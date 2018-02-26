@@ -21,7 +21,6 @@ import net.yrom.screenrecorder.MainRecorderActivity;
 
 import org.ayo.JsonUtils;
 import org.ayo.editor.CreateThreadActivity;
-import org.ayo.mall.activity.HellMainActivity;
 import org.ayo.sample.R;
 import org.ayo.sample.menu.Leaf;
 import org.ayo.sample.menu.MainPagerActivity;
@@ -94,6 +93,8 @@ import org.ayo.update.UpdateManager;
 import java.util.ArrayList;
 import java.util.List;
 
+import com2.ayo.webserver.HttpMainActivity;
+
 
 public class MainnActivity extends MainPagerActivity {
 
@@ -111,8 +112,8 @@ public class MainnActivity extends MainPagerActivity {
             {
                 menuItem1.addLeaf(new Leaf("智能机器人", "", ChatActivity.class, 1));
                 menuItem1.addLeaf(new Leaf("登录模板", "", LoginActivity.class, 1));
-                menuItem1.addLeaf(new Leaf("商城模板", "", HellMainActivity.class, 1));
                 menuItem1.addLeaf(new Leaf("录屏", "", MainRecorderActivity.class, 1));
+                menuItem1.addLeaf(new Leaf("Http服务器", "", HttpMainActivity.class, 1));
                 menuItem1.addLeaf(new Leaf("----TextView系列----", "", null));
                 menuItem1.addLeaf(new Leaf("html标签处理：原生，生成span", "", DemoOldHtmlActivity.class, 1));
                 menuItem1.addLeaf(new Leaf("awesome：span高级使用", "", AwesomeTextViewActivity.class, 1));

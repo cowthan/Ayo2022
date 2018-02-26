@@ -48,5 +48,5 @@ dependencies {
     compile configer['lib_recyclerview']
     compile configer['lib_design']
     compile configer['lib_cardview']
-    compile project(':ayo-animate')
+    compile project(':central:ayo-animate')
 }

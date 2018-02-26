@@ -1,6 +1,7 @@
 package org.ayo.robot;
 
-import org.ayo.fragmentation.SupportActivity;
+
+import me.yokeyword.fragmentation.SupportActivity;
 
 /**
  * Created by Administrator on 2017/1/1.

@@ -1,2 +1,3 @@
-include ':app', ':app-talker', ':ayocore', ':AppCore', ':ayokit', ':ayo-menu-lib', ':ayo-extra', ':ayo-ui-view-extra', ':ayo-ui-view', ':third-party-sdk', ':sample-core', ':sample-anim', ':ayo-animate', ':ayo-robot', ':ayo-colorpicker', ':sample-canvas', ':app-account', ':app-mall'
+include ':app', ':app-talker', ':central:ayo-menu-lib', ':ayo-extra', ':ayo-ui-view-extra', ':ayo-ui-view', ':third-party-sdk', ':ayo-robot', ':ayo-colorpicker', ':sample-canvas', ':app-account', ':app-mall',':central:ayocore',':central:ayokit', ':central:ayoshell', ':central:ayo-player',':central:ayo-social',':central:ayo-ui-image-picker',':central:ayo-animate'
+
 

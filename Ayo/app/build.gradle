@@ -137,32 +137,30 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     compile 'com.android.support:multidex:1.0.1'
     compile configer['lib_palette']
-
     compile project(':app-talker')
     compile project(':app-account')
     compile project(':app-mall')
     compile project(':ayo-extra')
-
-    compile project(':AppCore')
-    compile(name: 'ayo-ui-image-picker-release', ext: 'aar')
+    compile project(':central:ayoshell')
+    compile project(':central:ayo-ui-image-picker')
     compile(name: 'ayo-rich-editor-release', ext: 'aar')
     compile(name: 'markdown', ext: 'aar')
     compile(name: 'richtext', ext: 'aar')
     compile project(':third-party-sdk')
-
     compile 'com.jakewharton:butterknife:8.7.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
-
     compile 'com.evernote:android-job:1.1.10'
-    compile "com.github.bumptech.glide:glide:3.7.0"
+    compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'com.google.code.gson:gson:2.4'
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v2.6.1'
     compile 'com.googlecode.mp4parser:isoparser:1.0.6'
-
-
     compile(deps.rxbus) {
         exclude group: 'com.jakewharton.timber', module: 'timber'
     }
     compile deps.androidasync
     compile deps.timber
+    implementation project(':ayo-ui-view')
+    implementation project(':ayo-ui-view-extra')
+    implementation project(':ayo-colorpicker')
+    implementation project(':central:ayo-menu-lib')
 }

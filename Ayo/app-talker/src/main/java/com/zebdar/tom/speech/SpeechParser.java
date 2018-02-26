@@ -22,7 +22,6 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
-import static org.ayo.view.AyoViewLib.context;
 
 /**
  * 语音识别工具类
@@ -112,7 +111,7 @@ public class SpeechParser {
         // 设置返回结果格式
         mIat.setParameter(SpeechConstant.RESULT_TYPE, "json");
         // 设置语言
-        String l = PreferencesUtils.getSharePreStr(context, Const.XF_SET_VOICE_RECORD);
+        String l = PreferencesUtils.getSharePreStr(AppCore.app(), Const.XF_SET_VOICE_RECORD);
         if (TextUtils.isEmpty(l)) {//默认中文普通话
             mIat.setParameter(SpeechConstant.LANGUAGE, "zh_cn");
             mIat.setParameter(SpeechConstant.ACCENT, "mandarin");

@@ -1,2 +1,0 @@
-include ':ayo-ui-list', ':ayo-ui-view', ':ayo-ui-notify', ':ayo-ui-template', ':ayo-ui-view-extra', ':tpl-account', ':ayocore'
-
