@@ -24,8 +24,6 @@ repositories {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':central:ayokit')
+    compile project(':ayokit')
     compile 'org.greenrobot:eventbus:3.0.0'
-
-
 }
