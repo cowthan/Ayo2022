@@ -27,7 +27,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
 
-    compile project(':ayocore')
+    compile project(':central:ayocore')
 
     compile configer['lib_appcompat']
     compile configer['lib_recyclerview']

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="SwipeBackLayout">
-        <item name="edge_size">50dip</item>
-        <item name="shadow_left">@drawable/ayo_swipe_shadow_left</item>
-        <item name="shadow_right">@drawable/ayo_swipe_shadow_right</item>
-        <item name="shadow_bottom">@drawable/ayo_swipe_shadow_bottom</item>
-    </style>
+    <!--<style name="SwipeBackLayout">-->
+        <!--<item name="edge_size">50dip</item>-->
+        <!--<item name="shadow_left">@drawable/ayo_swipe_shadow_left</item>-->
+        <!--<item name="shadow_right">@drawable/ayo_swipe_shadow_right</item>-->
+        <!--<item name="shadow_bottom">@drawable/ayo_swipe_shadow_bottom</item>-->
+    <!--</style>-->
 
     <style name="AVLoadingIndicatorView">
         <item name="minWidth">48dip</item>
