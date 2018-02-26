@@ -1,3 +1,4 @@
+
 # 需要忽略的项目
 CarWifi
 ProjArtVideo
@@ -6,6 +7,10 @@ ProjArtVideo
 *.apk
 *.ap_
 central/
+# Built application files
+*.apk
+*.ap_
+.gradle/
 
 # Files for the ART/Dalvik VM
 *.dex
