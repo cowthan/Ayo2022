@@ -1,0 +1,45 @@
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
+
+ext {
+    //Android
+    androidBuildToolsVersion = "26.0.0"
+    androidMinSdkVersion = 16
+    androidTargetSdkVersion = 26
+    androidCompileSdkVersion = 26
+    supportLibraryVersion = '26.1.0'
+    otherLibraryVersion = '26.1.0'
+
+    //ViewLibraries
+    butterKnifeVersion = '8.2.1'
+
+
+    fresco = '1.8.0'
+    frescoGif = '1.8.0'
+    frescoPhoto = "1.1.3"
+    gpuImage = '1.3.0'
+    scaleImage = '3.9.0'
+
+    androidDependencies = [
+            recyclerView: "com.android.support:recyclerview-v7:${supportLibraryVersion}",
+            appcompat_v7: "com.android.support:appcompat-v7:${otherLibraryVersion}",
+            cardview_v7 : "com.android.support:cardview-v7:26.1.0",
+            support_v4  : "com.android.support:support-v4:${supportLibraryVersion}",
+            design      : "com.android.support:design:${otherLibraryVersion}",
+    ]
+
+    viewDependencies = [
+            butterKnife     : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            apt_butterKnife : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+
+            fresco         : "com.facebook.fresco:fresco:${fresco}",
+            frescoGif      : "com.facebook.fresco:animated-gif:${frescoGif}",
+            frescoPhoto    : "me.relex:photodraweeview:${frescoPhoto}",
+            gpuImage       : "jp.co.cyberagent.android.gpuimage:gpuimage-library:${gpuImage}",
+            scaleImage      : "com.davemorrissey.labs:subsampling-scale-image-view:${scaleImage}",
+    ]
+}
